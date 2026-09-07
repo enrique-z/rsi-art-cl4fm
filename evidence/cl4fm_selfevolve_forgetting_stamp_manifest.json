@@ -1,0 +1,1576 @@
+{
+  "ledger_rows": {
+    "gated::FG": {
+      "value": 0.016667,
+      "claim_id": "gated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:1",
+      "must_print": true
+    },
+    "gated::FG_ci_low": {
+      "value": -0.016667,
+      "claim_id": "gated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:2",
+      "must_print": false
+    },
+    "gated::FG_ci_high": {
+      "value": 0.033333,
+      "claim_id": "gated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:3",
+      "must_print": false
+    },
+    "gated::BWT_B": {
+      "value": -0.027778,
+      "claim_id": "gated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:4",
+      "must_print": true
+    },
+    "gated::BWT_B_ci_low": {
+      "value": -0.116667,
+      "claim_id": "gated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:5",
+      "must_print": false
+    },
+    "gated::BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "gated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:6",
+      "must_print": false
+    },
+    "gated::BWT_C": {
+      "value": -0.016667,
+      "claim_id": "gated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:7",
+      "must_print": true
+    },
+    "gated::BWT_C_ci_low": {
+      "value": -0.066667,
+      "claim_id": "gated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:8",
+      "must_print": false
+    },
+    "gated::BWT_C_ci_high": {
+      "value": 0.016667,
+      "claim_id": "gated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:9",
+      "must_print": false
+    },
+    "gated::accepted_edits": {
+      "value": 3.0,
+      "claim_id": "gated__accepted_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:10",
+      "must_print": false
+    },
+    "gated::accepted_edits_s1": {
+      "value": 3,
+      "claim_id": "gated__accepted_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:11",
+      "must_print": false
+    },
+    "gated::accepted_edits_s2": {
+      "value": 0,
+      "claim_id": "gated__accepted_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:12",
+      "must_print": false
+    },
+    "gated::accepted_edits_s3": {
+      "value": 6,
+      "claim_id": "gated__accepted_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:13",
+      "must_print": false
+    },
+    "gated::proposed_edits": {
+      "value": 9.0,
+      "claim_id": "gated__proposed_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:14",
+      "must_print": false
+    },
+    "gated::proposed_edits_s1": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:15",
+      "must_print": false
+    },
+    "gated::proposed_edits_s2": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:16",
+      "must_print": false
+    },
+    "gated::proposed_edits_s3": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:17",
+      "must_print": false
+    },
+    "gated::mem_chars": {
+      "value": 258.333333,
+      "claim_id": "gated__mem_chars",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:18",
+      "must_print": false
+    },
+    "gated::mem_chars_s1": {
+      "value": 393,
+      "claim_id": "gated__mem_chars_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:19",
+      "must_print": false
+    },
+    "gated::mem_chars_s2": {
+      "value": 0,
+      "claim_id": "gated__mem_chars_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:20",
+      "must_print": false
+    },
+    "gated::mem_chars_s3": {
+      "value": 382,
+      "claim_id": "gated__mem_chars_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:21",
+      "must_print": false
+    },
+    "gated::mem_entries": {
+      "value": 2.333333,
+      "claim_id": "gated__mem_entries",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:22",
+      "must_print": false
+    },
+    "gated::mem_entries_s1": {
+      "value": 3,
+      "claim_id": "gated__mem_entries_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:23",
+      "must_print": false
+    },
+    "gated::mem_entries_s2": {
+      "value": 0,
+      "claim_id": "gated__mem_entries_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:24",
+      "must_print": false
+    },
+    "gated::mem_entries_s3": {
+      "value": 4,
+      "claim_id": "gated__mem_entries_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:25",
+      "must_print": false
+    },
+    "gated::acc0_A": {
+      "value": 0.722222,
+      "claim_id": "gated__acc0_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:26",
+      "must_print": false
+    },
+    "gated::accR_A": {
+      "value": 0.738889,
+      "claim_id": "gated__accR_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:27",
+      "must_print": false
+    },
+    "gated::acc0_B": {
+      "value": 0.772222,
+      "claim_id": "gated__acc0_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:28",
+      "must_print": false
+    },
+    "gated::accR_B": {
+      "value": 0.744444,
+      "claim_id": "gated__accR_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:29",
+      "must_print": false
+    },
+    "gated::acc0_C": {
+      "value": 0.738889,
+      "claim_id": "gated__acc0_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:30",
+      "must_print": false
+    },
+    "gated::accR_C": {
+      "value": 0.722222,
+      "claim_id": "gated__accR_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:31",
+      "must_print": false
+    },
+    "neutral::FG": {
+      "value": -0.05,
+      "claim_id": "neutral__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:32",
+      "must_print": true
+    },
+    "neutral::FG_ci_low": {
+      "value": -0.116667,
+      "claim_id": "neutral__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:33",
+      "must_print": false
+    },
+    "neutral::FG_ci_high": {
+      "value": 0.0,
+      "claim_id": "neutral__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:34",
+      "must_print": false
+    },
+    "neutral::BWT_B": {
+      "value": -0.088889,
+      "claim_id": "neutral__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:35",
+      "must_print": true
+    },
+    "neutral::BWT_B_ci_low": {
+      "value": -0.133333,
+      "claim_id": "neutral__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:36",
+      "must_print": false
+    },
+    "neutral::BWT_B_ci_high": {
+      "value": -0.033333,
+      "claim_id": "neutral__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:37",
+      "must_print": false
+    },
+    "neutral::BWT_C": {
+      "value": -0.055556,
+      "claim_id": "neutral__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:38",
+      "must_print": true
+    },
+    "neutral::BWT_C_ci_low": {
+      "value": -0.066667,
+      "claim_id": "neutral__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:39",
+      "must_print": false
+    },
+    "neutral::BWT_C_ci_high": {
+      "value": -0.033333,
+      "claim_id": "neutral__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:40",
+      "must_print": false
+    },
+    "neutral::accepted_edits": {
+      "value": 6.0,
+      "claim_id": "neutral__accepted_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:41",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s1": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:42",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s2": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:43",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s3": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:44",
+      "must_print": false
+    },
+    "neutral::proposed_edits": {
+      "value": 6.0,
+      "claim_id": "neutral__proposed_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:45",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s1": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:46",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s2": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:47",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s3": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:48",
+      "must_print": false
+    },
+    "neutral::mem_chars": {
+      "value": 416.666667,
+      "claim_id": "neutral__mem_chars",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:49",
+      "must_print": false
+    },
+    "neutral::mem_chars_s1": {
+      "value": 416,
+      "claim_id": "neutral__mem_chars_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:50",
+      "must_print": false
+    },
+    "neutral::mem_chars_s2": {
+      "value": 421,
+      "claim_id": "neutral__mem_chars_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:51",
+      "must_print": false
+    },
+    "neutral::mem_chars_s3": {
+      "value": 413,
+      "claim_id": "neutral__mem_chars_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:52",
+      "must_print": false
+    },
+    "neutral::mem_entries": {
+      "value": 6.0,
+      "claim_id": "neutral__mem_entries",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:53",
+      "must_print": false
+    },
+    "neutral::mem_entries_s1": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:54",
+      "must_print": false
+    },
+    "neutral::mem_entries_s2": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:55",
+      "must_print": false
+    },
+    "neutral::mem_entries_s3": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:56",
+      "must_print": false
+    },
+    "neutral::acc0_A": {
+      "value": 0.722222,
+      "claim_id": "neutral__acc0_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:57",
+      "must_print": false
+    },
+    "neutral::accR_A": {
+      "value": 0.672222,
+      "claim_id": "neutral__accR_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:58",
+      "must_print": false
+    },
+    "neutral::acc0_B": {
+      "value": 0.772222,
+      "claim_id": "neutral__acc0_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:59",
+      "must_print": false
+    },
+    "neutral::accR_B": {
+      "value": 0.683333,
+      "claim_id": "neutral__accR_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:60",
+      "must_print": false
+    },
+    "neutral::acc0_C": {
+      "value": 0.738889,
+      "claim_id": "neutral__acc0_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:61",
+      "must_print": false
+    },
+    "neutral::accR_C": {
+      "value": 0.683333,
+      "claim_id": "neutral__accR_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:62",
+      "must_print": false
+    },
+    "neutralshort::FG": {
+      "value": -0.055556,
+      "claim_id": "neutralshort__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:63",
+      "must_print": true
+    },
+    "neutralshort::FG_ci_low": {
+      "value": -0.1,
+      "claim_id": "neutralshort__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:64",
+      "must_print": false
+    },
+    "neutralshort::FG_ci_high": {
+      "value": -0.016667,
+      "claim_id": "neutralshort__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:65",
+      "must_print": false
+    },
+    "neutralshort::BWT_B": {
+      "value": -0.061111,
+      "claim_id": "neutralshort__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:66",
+      "must_print": true
+    },
+    "neutralshort::BWT_B_ci_low": {
+      "value": -0.133333,
+      "claim_id": "neutralshort__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:67",
+      "must_print": false
+    },
+    "neutralshort::BWT_B_ci_high": {
+      "value": -0.016667,
+      "claim_id": "neutralshort__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:68",
+      "must_print": false
+    },
+    "neutralshort::BWT_C": {
+      "value": -0.088889,
+      "claim_id": "neutralshort__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:69",
+      "must_print": true
+    },
+    "neutralshort::BWT_C_ci_low": {
+      "value": -0.1,
+      "claim_id": "neutralshort__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:70",
+      "must_print": false
+    },
+    "neutralshort::BWT_C_ci_high": {
+      "value": -0.083333,
+      "claim_id": "neutralshort__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:71",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits": {
+      "value": 4.0,
+      "claim_id": "neutralshort__accepted_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:72",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s1": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:73",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s2": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:74",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s3": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:75",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits": {
+      "value": 4.0,
+      "claim_id": "neutralshort__proposed_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:76",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s1": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:77",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s2": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:78",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s3": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:79",
+      "must_print": false
+    },
+    "neutralshort::mem_chars": {
+      "value": 278.666667,
+      "claim_id": "neutralshort__mem_chars",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:80",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s1": {
+      "value": 276,
+      "claim_id": "neutralshort__mem_chars_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:81",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s2": {
+      "value": 286,
+      "claim_id": "neutralshort__mem_chars_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:82",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s3": {
+      "value": 274,
+      "claim_id": "neutralshort__mem_chars_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:83",
+      "must_print": false
+    },
+    "neutralshort::mem_entries": {
+      "value": 4.0,
+      "claim_id": "neutralshort__mem_entries",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:84",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s1": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:85",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s2": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:86",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s3": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:87",
+      "must_print": false
+    },
+    "neutralshort::acc0_A": {
+      "value": 0.722222,
+      "claim_id": "neutralshort__acc0_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:88",
+      "must_print": false
+    },
+    "neutralshort::accR_A": {
+      "value": 0.666667,
+      "claim_id": "neutralshort__accR_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:89",
+      "must_print": false
+    },
+    "neutralshort::acc0_B": {
+      "value": 0.772222,
+      "claim_id": "neutralshort__acc0_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:90",
+      "must_print": false
+    },
+    "neutralshort::accR_B": {
+      "value": 0.711111,
+      "claim_id": "neutralshort__accR_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:91",
+      "must_print": false
+    },
+    "neutralshort::acc0_C": {
+      "value": 0.738889,
+      "claim_id": "neutralshort__acc0_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:92",
+      "must_print": false
+    },
+    "neutralshort::accR_C": {
+      "value": 0.65,
+      "claim_id": "neutralshort__accR_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:93",
+      "must_print": false
+    },
+    "ungated::FG": {
+      "value": 0.033333,
+      "claim_id": "ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:94",
+      "must_print": true
+    },
+    "ungated::FG_ci_low": {
+      "value": -0.016667,
+      "claim_id": "ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:95",
+      "must_print": false
+    },
+    "ungated::FG_ci_high": {
+      "value": 0.066667,
+      "claim_id": "ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:96",
+      "must_print": false
+    },
+    "ungated::BWT_B": {
+      "value": -0.044444,
+      "claim_id": "ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:97",
+      "must_print": true
+    },
+    "ungated::BWT_B_ci_low": {
+      "value": -0.116667,
+      "claim_id": "ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:98",
+      "must_print": false
+    },
+    "ungated::BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:99",
+      "must_print": false
+    },
+    "ungated::BWT_C": {
+      "value": -0.05,
+      "claim_id": "ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:100",
+      "must_print": true
+    },
+    "ungated::BWT_C_ci_low": {
+      "value": -0.083333,
+      "claim_id": "ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:101",
+      "must_print": false
+    },
+    "ungated::BWT_C_ci_high": {
+      "value": -0.016667,
+      "claim_id": "ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:102",
+      "must_print": false
+    },
+    "ungated::accepted_edits": {
+      "value": 8.666667,
+      "claim_id": "ungated__accepted_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:103",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s1": {
+      "value": 8,
+      "claim_id": "ungated__accepted_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:104",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s2": {
+      "value": 9,
+      "claim_id": "ungated__accepted_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:105",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s3": {
+      "value": 9,
+      "claim_id": "ungated__accepted_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:106",
+      "must_print": false
+    },
+    "ungated::proposed_edits": {
+      "value": 9.0,
+      "claim_id": "ungated__proposed_edits",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:107",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s1": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:108",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s2": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:109",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s3": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:110",
+      "must_print": false
+    },
+    "ungated::mem_chars": {
+      "value": 403.0,
+      "claim_id": "ungated__mem_chars",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:111",
+      "must_print": false
+    },
+    "ungated::mem_chars_s1": {
+      "value": 282,
+      "claim_id": "ungated__mem_chars_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:112",
+      "must_print": false
+    },
+    "ungated::mem_chars_s2": {
+      "value": 468,
+      "claim_id": "ungated__mem_chars_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:113",
+      "must_print": false
+    },
+    "ungated::mem_chars_s3": {
+      "value": 459,
+      "claim_id": "ungated__mem_chars_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:114",
+      "must_print": false
+    },
+    "ungated::mem_entries": {
+      "value": 4.0,
+      "claim_id": "ungated__mem_entries",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:115",
+      "must_print": false
+    },
+    "ungated::mem_entries_s1": {
+      "value": 2,
+      "claim_id": "ungated__mem_entries_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:116",
+      "must_print": false
+    },
+    "ungated::mem_entries_s2": {
+      "value": 5,
+      "claim_id": "ungated__mem_entries_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:117",
+      "must_print": false
+    },
+    "ungated::mem_entries_s3": {
+      "value": 5,
+      "claim_id": "ungated__mem_entries_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:118",
+      "must_print": false
+    },
+    "ungated::acc0_A": {
+      "value": 0.722222,
+      "claim_id": "ungated__acc0_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:119",
+      "must_print": false
+    },
+    "ungated::accR_A": {
+      "value": 0.755556,
+      "claim_id": "ungated__accR_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:120",
+      "must_print": false
+    },
+    "ungated::acc0_B": {
+      "value": 0.772222,
+      "claim_id": "ungated__acc0_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:121",
+      "must_print": false
+    },
+    "ungated::accR_B": {
+      "value": 0.727778,
+      "claim_id": "ungated__accR_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:122",
+      "must_print": false
+    },
+    "ungated::acc0_C": {
+      "value": 0.738889,
+      "claim_id": "ungated__acc0_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:123",
+      "must_print": false
+    },
+    "ungated::accR_C": {
+      "value": 0.688889,
+      "claim_id": "ungated__accR_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:124",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__FG": {
+      "value": -0.016667,
+      "claim_id": "gated_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:125",
+      "must_print": true
+    },
+    "contrast::gated_minus_ungated__FG_ci_low": {
+      "value": -0.033333,
+      "claim_id": "gated_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:126",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__FG_ci_high": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:127",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_B": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:128",
+      "must_print": true
+    },
+    "contrast::gated_minus_ungated__BWT_B_ci_low": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:129",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_B_ci_high": {
+      "value": 0.05,
+      "claim_id": "gated_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:130",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_C": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:131",
+      "must_print": true
+    },
+    "contrast::gated_minus_ungated__BWT_C_ci_low": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:132",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_C_ci_high": {
+      "value": 0.05,
+      "claim_id": "gated_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:133",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__FG": {
+      "value": -0.083333,
+      "claim_id": "neutral_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:134",
+      "must_print": true
+    },
+    "contrast::neutral_minus_ungated__FG_ci_low": {
+      "value": -0.1,
+      "claim_id": "neutral_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:135",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__FG_ci_high": {
+      "value": -0.066667,
+      "claim_id": "neutral_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:136",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_B": {
+      "value": -0.044444,
+      "claim_id": "neutral_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:137",
+      "must_print": true
+    },
+    "contrast::neutral_minus_ungated__BWT_B_ci_low": {
+      "value": -0.066667,
+      "claim_id": "neutral_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:138",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_B_ci_high": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:139",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_C": {
+      "value": -0.005556,
+      "claim_id": "neutral_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:140",
+      "must_print": true
+    },
+    "contrast::neutral_minus_ungated__BWT_C_ci_low": {
+      "value": -0.05,
+      "claim_id": "neutral_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:141",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_C_ci_high": {
+      "value": 0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:142",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__FG": {
+      "value": 0.066667,
+      "claim_id": "gated_minus_neutral__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:143",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutral__FG_ci_low": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutral__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:144",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__FG_ci_high": {
+      "value": 0.1,
+      "claim_id": "gated_minus_neutral__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:145",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_B": {
+      "value": 0.061111,
+      "claim_id": "gated_minus_neutral__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:146",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutral__BWT_B_ci_low": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_neutral__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:147",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_B_ci_high": {
+      "value": 0.116667,
+      "claim_id": "gated_minus_neutral__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:148",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_C": {
+      "value": 0.038889,
+      "claim_id": "gated_minus_neutral__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:149",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutral__BWT_C_ci_low": {
+      "value": 0.0,
+      "claim_id": "gated_minus_neutral__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:150",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_C_ci_high": {
+      "value": 0.083333,
+      "claim_id": "gated_minus_neutral__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:151",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__FG": {
+      "value": 0.072222,
+      "claim_id": "gated_minus_neutralshort__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:152",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutralshort__FG_ci_low": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:153",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__FG_ci_high": {
+      "value": 0.133333,
+      "claim_id": "gated_minus_neutralshort__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:154",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_B": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:155",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutralshort__BWT_B_ci_low": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_neutralshort__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:156",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_B_ci_high": {
+      "value": 0.05,
+      "claim_id": "gated_minus_neutralshort__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:157",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_C": {
+      "value": 0.072222,
+      "claim_id": "gated_minus_neutralshort__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:158",
+      "must_print": true
+    },
+    "contrast::gated_minus_neutralshort__BWT_C_ci_low": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:159",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_C_ci_high": {
+      "value": 0.116667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:160",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__FG": {
+      "value": -0.088889,
+      "claim_id": "neutralshort_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:161",
+      "must_print": true
+    },
+    "contrast::neutralshort_minus_ungated__FG_ci_low": {
+      "value": -0.166667,
+      "claim_id": "neutralshort_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:162",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__FG_ci_high": {
+      "value": -0.033333,
+      "claim_id": "neutralshort_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:163",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B": {
+      "value": -0.016667,
+      "claim_id": "neutralshort_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:164",
+      "must_print": true
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B_ci_low": {
+      "value": -0.05,
+      "claim_id": "neutralshort_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:165",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "neutralshort_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:166",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C": {
+      "value": -0.038889,
+      "claim_id": "neutralshort_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:167",
+      "must_print": true
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C_ci_low": {
+      "value": -0.083333,
+      "claim_id": "neutralshort_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:168",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C_ci_high": {
+      "value": 0.0,
+      "claim_id": "neutralshort_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:169",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s1": {
+      "value": -0.016667,
+      "claim_id": "gated_minus_ungated__FG_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:170",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s2": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__FG_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:171",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s3": {
+      "value": -0.033333,
+      "claim_id": "gated_minus_ungated__FG_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:172",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop1": {
+      "value": -0.016667,
+      "claim_id": "gated_minus_ungated__FG_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:173",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop2": {
+      "value": -0.025,
+      "claim_id": "gated_minus_ungated__FG_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:174",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop3": {
+      "value": -0.008333,
+      "claim_id": "gated_minus_ungated__FG_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:175",
+      "must_print": false
+    },
+    "perm::gated_minus_ungated__FG_p": {
+      "value": 0.5,
+      "claim_id": "gated_minus_ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:176",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s1": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_B_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:177",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s2": {
+      "value": 0.05,
+      "claim_id": "gated_minus_ungated__BWT_B_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:178",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s3": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_B_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:179",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop1": {
+      "value": 0.025,
+      "claim_id": "gated_minus_ungated__BWT_B_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:180",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop2": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_B_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:181",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop3": {
+      "value": 0.025,
+      "claim_id": "gated_minus_ungated__BWT_B_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:182",
+      "must_print": false
+    },
+    "perm::gated_minus_ungated__BWT_B_p": {
+      "value": 1.0,
+      "claim_id": "gated_minus_ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:183",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s1": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_ungated__BWT_C_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:184",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s2": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_ungated__BWT_C_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:185",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s3": {
+      "value": 0.05,
+      "claim_id": "gated_minus_ungated__BWT_C_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:186",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop1": {
+      "value": 0.041667,
+      "claim_id": "gated_minus_ungated__BWT_C_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:187",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop2": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_ungated__BWT_C_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:188",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop3": {
+      "value": 0.025,
+      "claim_id": "gated_minus_ungated__BWT_C_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:189",
+      "must_print": false
+    },
+    "perm::gated_minus_ungated__BWT_C_p": {
+      "value": 0.25,
+      "claim_id": "gated_minus_ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:190",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s1": {
+      "value": -0.083333,
+      "claim_id": "neutral_minus_ungated__FG_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:191",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s2": {
+      "value": -0.1,
+      "claim_id": "neutral_minus_ungated__FG_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:192",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s3": {
+      "value": -0.066667,
+      "claim_id": "neutral_minus_ungated__FG_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:193",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop1": {
+      "value": -0.083333,
+      "claim_id": "neutral_minus_ungated__FG_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:194",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop2": {
+      "value": -0.075,
+      "claim_id": "neutral_minus_ungated__FG_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:195",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop3": {
+      "value": -0.091667,
+      "claim_id": "neutral_minus_ungated__FG_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:196",
+      "must_print": false
+    },
+    "perm::neutral_minus_ungated__FG_p": {
+      "value": 0.25,
+      "claim_id": "neutral_minus_ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:197",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s1": {
+      "value": -0.05,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:198",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s2": {
+      "value": -0.066667,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:199",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s3": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:200",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop1": {
+      "value": -0.041667,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:201",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop2": {
+      "value": -0.033333,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:202",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop3": {
+      "value": -0.058333,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:203",
+      "must_print": false
+    },
+    "perm::neutral_minus_ungated__BWT_B_p": {
+      "value": 0.25,
+      "claim_id": "neutral_minus_ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:204",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s1": {
+      "value": 0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:205",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s2": {
+      "value": -0.05,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:206",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s3": {
+      "value": 0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:207",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop1": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:208",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop2": {
+      "value": 0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:209",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop3": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:210",
+      "must_print": false
+    },
+    "perm::neutral_minus_ungated__BWT_C_p": {
+      "value": 1.0,
+      "claim_id": "neutral_minus_ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:211",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s1": {
+      "value": 0.05,
+      "claim_id": "gated_minus_neutralshort__FG_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:212",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s2": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__FG_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:213",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s3": {
+      "value": 0.133333,
+      "claim_id": "gated_minus_neutralshort__FG_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:214",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop1": {
+      "value": 0.083333,
+      "claim_id": "gated_minus_neutralshort__FG_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:215",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop2": {
+      "value": 0.091667,
+      "claim_id": "gated_minus_neutralshort__FG_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:216",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop3": {
+      "value": 0.041667,
+      "claim_id": "gated_minus_neutralshort__FG_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:217",
+      "must_print": false
+    },
+    "perm::gated_minus_neutralshort__FG_p": {
+      "value": 0.25,
+      "claim_id": "gated_minus_neutralshort__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:218",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s1": {
+      "value": 0.05,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:219",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s2": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:220",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s3": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:221",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop1": {
+      "value": 0.025,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:222",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop2": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:223",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop3": {
+      "value": 0.041667,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:224",
+      "must_print": false
+    },
+    "perm::gated_minus_neutralshort__BWT_B_p": {
+      "value": 0.25,
+      "claim_id": "gated_minus_neutralshort__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:225",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s1": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:226",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s2": {
+      "value": 0.116667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:227",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s3": {
+      "value": 0.083333,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:228",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop1": {
+      "value": 0.1,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop1",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:229",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop2": {
+      "value": 0.05,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop2",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:230",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop3": {
+      "value": 0.066667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop3",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:231",
+      "must_print": false
+    },
+    "perm::gated_minus_neutralshort__BWT_C_p": {
+      "value": 0.25,
+      "claim_id": "gated_minus_neutralshort__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:232",
+      "must_print": false
+    },
+    "global::n_ambiguous": {
+      "value": 1,
+      "claim_id": "ambiguous_parse_count",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:233",
+      "must_print": false
+    },
+    "global::n_items_scored": {
+      "value": 3240,
+      "claim_id": "items_scored_total",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:234",
+      "must_print": false
+    },
+    "mcnemar::ungated_A": {
+      "value": 0.518958,
+      "claim_id": "mcnemar_ungated_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:235",
+      "must_print": false
+    },
+    "mcnemar::ungated_B": {
+      "value": 0.229481,
+      "claim_id": "mcnemar_ungated_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:236",
+      "must_print": false
+    },
+    "mcnemar::ungated_C": {
+      "value": 0.187742,
+      "claim_id": "mcnemar_ungated_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:237",
+      "must_print": false
+    },
+    "mcnemar::gated_A": {
+      "value": 0.728332,
+      "claim_id": "mcnemar_gated_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:238",
+      "must_print": false
+    },
+    "mcnemar::gated_B": {
+      "value": 0.404873,
+      "claim_id": "mcnemar_gated_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:239",
+      "must_print": false
+    },
+    "mcnemar::gated_C": {
+      "value": 0.677639,
+      "claim_id": "mcnemar_gated_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:240",
+      "must_print": false
+    },
+    "mcnemar::neutral_A": {
+      "value": 0.24296,
+      "claim_id": "mcnemar_neutral_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:241",
+      "must_print": false
+    },
+    "mcnemar::neutral_B": {
+      "value": 0.007,
+      "claim_id": "mcnemar_neutral_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:242",
+      "must_print": false
+    },
+    "mcnemar::neutral_C": {
+      "value": 0.143307,
+      "claim_id": "mcnemar_neutral_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:243",
+      "must_print": false
+    },
+    "mcnemar::neutralshort_A": {
+      "value": 0.252854,
+      "claim_id": "mcnemar_neutralshort_A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:244",
+      "must_print": false
+    },
+    "mcnemar::neutralshort_B": {
+      "value": 0.061428,
+      "claim_id": "mcnemar_neutralshort_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:245",
+      "must_print": false
+    },
+    "mcnemar::neutralshort_C": {
+      "value": 0.025896,
+      "claim_id": "mcnemar_neutralshort_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:246",
+      "must_print": false
+    },
+    "noise_null::A": {
+      "value": -0.044444,
+      "claim_id": "noise_null__A",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:247",
+      "must_print": true
+    },
+    "noise_null::A_max_abs": {
+      "value": 0.066667,
+      "claim_id": "noise_null__A_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:248",
+      "must_print": false
+    },
+    "noise_null::B": {
+      "value": -0.016667,
+      "claim_id": "noise_null__B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:249",
+      "must_print": true
+    },
+    "noise_null::B_max_abs": {
+      "value": 0.066667,
+      "claim_id": "noise_null__B_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:250",
+      "must_print": false
+    },
+    "noise_null::C": {
+      "value": 0.011111,
+      "claim_id": "noise_null__C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:251",
+      "must_print": true
+    },
+    "noise_null::C_max_abs": {
+      "value": 0.066667,
+      "claim_id": "noise_null__C_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:252",
+      "must_print": false
+    },
+    "protocol::gated_unparseable": {
+      "value": 0,
+      "claim_id": "protocol_gated__unparseable_reflections",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:253",
+      "must_print": false
+    },
+    "protocol::gated_below_budget": {
+      "value": 0,
+      "claim_id": "protocol_gated__rounds_below_budget",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:254",
+      "must_print": false
+    },
+    "protocol::neutral_unparseable": {
+      "value": 0,
+      "claim_id": "protocol_neutral__unparseable_reflections",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:255",
+      "must_print": false
+    },
+    "protocol::neutral_below_budget": {
+      "value": 0,
+      "claim_id": "protocol_neutral__rounds_below_budget",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:256",
+      "must_print": false
+    },
+    "protocol::neutralshort_unparseable": {
+      "value": 0,
+      "claim_id": "protocol_neutralshort__unparseable_reflections",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:257",
+      "must_print": false
+    },
+    "protocol::neutralshort_below_budget": {
+      "value": 0,
+      "claim_id": "protocol_neutralshort__rounds_below_budget",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:258",
+      "must_print": false
+    },
+    "protocol::ungated_unparseable": {
+      "value": 0,
+      "claim_id": "protocol_ungated__unparseable_reflections",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:259",
+      "must_print": false
+    },
+    "protocol::ungated_below_budget": {
+      "value": 0,
+      "claim_id": "protocol_ungated__rounds_below_budget",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:260",
+      "must_print": false
+    },
+    "global::n_model_calls": {
+      "value": 3638,
+      "claim_id": "model_calls_total",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:261",
+      "must_print": false
+    },
+    "global::n_failed_calls": {
+      "value": 0,
+      "claim_id": "model_calls_failed",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:262",
+      "must_print": false
+    }
+  }
+}

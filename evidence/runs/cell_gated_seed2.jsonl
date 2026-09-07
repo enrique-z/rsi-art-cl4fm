@@ -1,0 +1,6 @@
+{"kind": "gate", "arm": "gated", "seed": 2, "round": 1, "a_base": 0.8333333333333334, "a_new": 0.6666666666666666, "anchor_base": 0.75, "anchor_new": 0.625, "passed": false}
+{"kind": "round", "arm": "gated", "seed": 2, "round": 1, "n_proposed": 3, "n_accepted": 0, "mem_entries": 0, "mem_chars": 0, "parse_status": "ok", "memory": []}
+{"kind": "gate", "arm": "gated", "seed": 2, "round": 2, "a_base": 0.8333333333333334, "a_new": 0.6666666666666666, "anchor_base": 0.75, "anchor_new": 0.625, "passed": false}
+{"kind": "round", "arm": "gated", "seed": 2, "round": 2, "n_proposed": 3, "n_accepted": 0, "mem_entries": 0, "mem_chars": 0, "parse_status": "ok", "memory": []}
+{"kind": "gate", "arm": "gated", "seed": 2, "round": 3, "a_base": 0.8333333333333334, "a_new": 0.6666666666666666, "anchor_base": 0.75, "anchor_new": 0.75, "passed": false}
+{"kind": "round", "arm": "gated", "seed": 2, "round": 3, "n_proposed": 3, "n_accepted": 0, "mem_entries": 0, "mem_chars": 0, "parse_status": "ok", "memory": []}

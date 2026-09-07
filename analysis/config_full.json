@@ -1,0 +1,85 @@
+{
+  "_comment": "Frozen full-run configuration. Written 2026-09-06T23:30Z BEFORE the run. Temperature corrected 0.0 -> 0.7 at 2026-09-06T23:59Z (amendment A3) after a mid-run integrity check found the seed inert at temperature 0, which would have made the pre-declared unit of independence degenerate. See evidence/DESIGN_NOTES.md amendment A3.",
+  "model": "llama3.2:3b",
+  "ollama_endpoint": "http://127.0.0.1:11500",
+  "temperature": 0.7,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "rounds": 3,
+  "item_seed": 20260907,
+  "n_eval_A": 60,
+  "n_eval_B": 60,
+  "n_eval_C": 60,
+  "n_A_train": 6,
+  "edit_budget": 3,
+  "n_gate_A": 6,
+  "n_anchor_B": 4,
+  "n_anchor_C": 4,
+  "np_numeric": 320,
+  "np_mcq": 140,
+  "np_reflect": 500,
+  "np_judge": 8,
+  "neutral_target_chars": [
+    308,
+    409,
+    403
+  ],
+  "_neutral_target_provenance": {
+    "measured_from": [
+      "cell_ungated_seed1.jsonl",
+      "cell_ungated_seed2.jsonl",
+      "cell_ungated_seed3.jsonl"
+    ],
+    "per_round_observed_mem_chars": {
+      "1": [
+        264,
+        322,
+        339
+      ],
+      "2": [
+        405,
+        397,
+        426
+      ],
+      "3": [
+        282,
+        468,
+        459
+      ]
+    },
+    "rule": "mean over ungated seeds of cumulative memory length in characters after each round"
+  },
+  "neutralshort_target_chars": [
+    227,
+    227,
+    258
+  ],
+  "_neutralshort_target_chars_provenance": {
+    "measured_from": [
+      "cell_gated_seed1.jsonl",
+      "cell_gated_seed2.jsonl",
+      "cell_gated_seed3.jsonl"
+    ],
+    "per_round_observed_mem_chars": {
+      "1": [
+        393,
+        0,
+        289
+      ],
+      "2": [
+        393,
+        0,
+        289
+      ],
+      "3": [
+        393,
+        0,
+        382
+      ]
+    },
+    "rule": "mean over gated seeds of cumulative memory length in characters after each round"
+  }
+}

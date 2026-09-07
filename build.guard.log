@@ -1,0 +1,34 @@
+[guard] manuscript      : main.tex
+[guard] manifest        : cl4fm_selfevolve_forgetting_stamp_manifest.json (262 rows)
+[guard] ledger verdicts : 262
+[guard] required rows   : 30 must_print, 30 of them printed
+[guard] reference rows  : 0 recorded for audit, not printed in the manuscript
+[guard] macros          : 412 StampedCell, 68 SafeNum, 0 ResultCell
+[guard] mode            : strict
+[guard] QD enforce      : off (pilot)
+[guard] WARN  F-031 direction-negative: line 313: verb 'below' near negative value -0.016667: 'The plasticity price does not separate from zero, though the whole interval lies at or below it ($\\StampedCell{contrast}{gated_minus_ungated__FG}{-0'
+[guard] WARN  F-031 direction-negative: line 361: verb 'hurt' near negative value -0.055556: '061111}$) and hurt on CommonsenseQA ($\\StampedCell{neutral}{BWT_C}{-0'
+[guard] WARN  FG-2 safenum-unguarded: line 77: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 142: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 172: \SafeNum{60} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 174: \SafeNum{0.7} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 180: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 181: \SafeNum{10000} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 194: \SafeNum{262} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 206: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 223: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 241: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 268: \SafeNum{95} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 394: \SafeNum{60} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 466: \SafeNum{60} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 467: \SafeNum{60} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 472: \SafeNum{0.7} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 474: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 475: \SafeNum{24} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 476: \SafeNum{0.7} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 476: \SafeNum{120} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 477: \SafeNum{298} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 477: \SafeNum{240} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 549: \SafeNum{27} does not appear in the manifest — unguarded numeric literal
+[guard] WARN  FG-2 safenum-unguarded: line 631: \SafeNum{262} does not appear in the manifest — unguarded numeric literal
+[guard] OK — 412 stamped cell(s) resolve against the manifest
