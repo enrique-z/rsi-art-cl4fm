@@ -5,7 +5,50 @@ matches a ledger row (gate 3), but nothing verifies that the surrounding prose
 reasoning about the number is correct in the domain. That is what this file
 records.
 
-## Rows
+---
+
+## ⚠ Scope: this file audits the **three-seed** grid and is superseded in part
+
+**Read this before the rows below.** This audit was written against the
+three-seed grid, before amendment **A5** extended the experiment to six seeds.
+It is kept in the artifact unedited because it is part of the honest record of
+how the paper was checked — but **the numbers and two of the verdicts in the
+rows below are the three-seed ones and are superseded.** The paper reports the
+six-seed result. Where this file and the paper disagree, the paper and the
+ledger (`evidence/cl4fm_selfevolve_forgetting_ledger.jsonl`, 612 rows) are
+correct.
+
+What A5 changed, taken from the current stamp manifest and the paper's Results
+section:
+
+| | three seeds (audited below) | six seeds (reported in the paper) |
+|---|---|---|
+| `ungated::BWT_C` | -0.05 | **-0.033333** (CI touches zero) |
+| `ungated::BWT_B` | -0.044444 | **-0.036111** (CI contains zero) |
+| `contrast::gated_minus_ungated__BWT_C` | +0.033333 (CI excluded zero) | **+0.011111** (CI contains zero; sign-flip p = 0.5625) |
+| `contrast::gated_minus_ungated__BWT_B` | +0.016667 | **-0.002778** (faintly negative) |
+| `contrast::neutral_minus_ungated__BWT_B` | -0.044444 | **-0.033333** |
+| `neutral::FG` | -0.05 | **-0.041667** |
+| `neutral::BWT_B` | -0.088889 | **-0.069444** |
+| `noise_null::C_max_abs` | 0.066667 | **0.116667** |
+| `gated::mem_chars` / `ungated::mem_chars` | 258.333333 / 403.0 | **378.833333 / 518.166667** |
+| `gated::accepted_edits` | 3.0 | **4.0** |
+| `global::n_model_calls` / `n_items_scored` / `n_ambiguous` | 3098 / 2700 / 1 | **7277 / 6480 / 2** |
+| **Verdict on P1** | "not established at this scale" | **REFUTED** — criterion met on neither family |
+| **Verdict on P2** | "partially holds" (CommonsenseQA only) | **REFUTED** — that contrast is withdrawn too |
+
+The pre-declared falsifier still fires at six seeds (the length-matched neutral
+arm degrades more than the ungated arm on families A and B, and the short
+padding arm reproduces it on C), so rows 5 and 8 below survive in direction if
+not in magnitude. Amendment **A6** additionally flags that the percentile
+bootstrap interval is degenerate at small *n*, so every "CI excludes zero"
+judgement in the rows below must be read alongside the paired-*t* interval and
+sign-flip *p* now stamped in the manifest. `EXPERIMENT_REPORT.md` §4–§6 carries
+the six-seed tables and verdicts in full.
+
+---
+
+## Rows (three-seed audit, as written)
 
 One row per abstract claim. Verdicts: PASS / FLAG / BLOCK.
 

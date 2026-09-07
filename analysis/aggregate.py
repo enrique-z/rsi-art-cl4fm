@@ -52,6 +52,65 @@ def boot_ci(vals, B=B_BOOT, seed=BOOT_SEED, alpha=0.05):
     return (lo, hi)
 
 
+# ---------------------------------------------------------------------------
+# Amendment A6 helpers. These apply to EVERY reported interval, arm-level and
+# contrast alike -- not just to the three contrasts A4 happened to single out.
+#
+# TCRIT[df] = two-sided 95% Student-t critical value.
+TCRIT = {1: 12.7062, 2: 4.3027, 3: 3.1824, 4: 2.7764, 5: 2.5706,
+         6: 2.4469, 7: 2.3646, 8: 2.3060, 9: 2.2622, 10: 2.2281,
+         11: 2.2010, 17: 2.1098}
+
+
+def paired_t(vals):
+    """Seed-level paired t interval. Returns (lo, hi, t_stat, df).
+
+    Unlike the percentile bootstrap this does not collapse to [min, max] at
+    small n, so it can include zero when the seeds merely agree in sign.
+    """
+    n = len(vals)
+    if n < 2 or statistics.pstdev(vals) == 0:
+        return (None, None, None, n - 1)
+    sd = statistics.stdev(vals)
+    se = sd / math.sqrt(n)
+    mu = statistics.fmean(vals)
+    df = n - 1
+    tc = TCRIT.get(df)
+    if tc is None or se == 0:
+        return (None, None, mu / se if se else None, df)
+    return (mu - tc * se, mu + tc * se, mu / se, df)
+
+
+def signflip_p(vals):
+    """Exact two-sided sign-flip permutation test at the seed level.
+
+    Smallest attainable p is 2/2**n: 0.25 at n=3, 0.03125 at n=6.
+    """
+    n = len(vals)
+    if n == 0:
+        return None
+    obs = abs(statistics.fmean(vals))
+    hits = 0
+    for mask in range(2 ** n):
+        dd = [(-x if (mask >> i) & 1 else x) for i, x in enumerate(vals)]
+        if abs(statistics.fmean(dd)) >= obs - 1e-12:
+            hits += 1
+    return hits / 2 ** n
+
+
+def ci_is_degenerate(vals, lo, hi):
+    """True iff the percentile CI is exactly [min(vals), max(vals)].
+
+    At small n the percentile bootstrap of the mean is bounded by the sample
+    min and max, so when every value shares a sign the interval CANNOT contain
+    zero whatever the effect size. "Excludes zero" then carries no information
+    beyond "the seeds agree in sign".
+    """
+    if lo is None or not vals:
+        return False
+    return abs(lo - min(vals)) < 1e-9 and abs(hi - max(vals)) < 1e-9
+
+
 def binom_two_sided(b, c):
     """Exact McNemar: two-sided binomial test of b successes out of n=b+c, p=0.5."""
     n = b + c
@@ -107,18 +166,42 @@ def main():
             vals = [seedmap[s][mname] for s in seeds]
             mu = statistics.fmean(vals)
             lo, hi = boot_ci(vals)
-            entry[mname] = {"mean": mu, "ci_low": lo, "ci_high": hi, "per_seed": vals}
+            tlo, thi, tstat, dfree = paired_t(vals)
+            degen = ci_is_degenerate(vals, lo, hi)
+            pv = signflip_p(vals)
+            entry[mname] = {"mean": mu, "ci_low": lo, "ci_high": hi,
+                            "per_seed": vals, "n_seeds": len(seeds),
+                            "t_ci_low": tlo, "t_ci_high": thi,
+                            "t_stat": tstat, "t_df": dfree,
+                            "bootstrap_ci_degenerate": bool(degen),
+                            "signflip_p": pv}
             add(f"{arm}__{mname}", mname, mu,
                 f"mean over {len(seeds)} seeds of {mname} for arm '{arm}'; "
-                f"seed-level percentile bootstrap B={B_BOOT}",
+                f"seed-level percentile bootstrap B={B_BOOT}; n={len(seeds)}; "
+                f"percentile CI degenerate (== [min,max]) = {bool(degen)}",
                 (lo, hi), must_print=True,
                 stamp=f"{arm}::{mname}")
             add(f"{arm}__{mname}_ci_low", "ci_low", lo,
-                f"bootstrap 2.5th pct of {mname}, arm '{arm}'", must_print=False,
-                stamp=f"{arm}::{mname}_ci_low")
+                f"bootstrap 2.5th pct of {mname}, arm '{arm}' (n={len(seeds)})",
+                must_print=False, stamp=f"{arm}::{mname}_ci_low")
             add(f"{arm}__{mname}_ci_high", "ci_high", hi,
-                f"bootstrap 97.5th pct of {mname}, arm '{arm}'", must_print=False,
-                stamp=f"{arm}::{mname}_ci_high")
+                f"bootstrap 97.5th pct of {mname}, arm '{arm}' (n={len(seeds)})",
+                must_print=False, stamp=f"{arm}::{mname}_ci_high")
+            # Amendment A6: the t interval accompanies every bootstrap interval.
+            if tlo is not None:
+                add(f"{arm}__{mname}_t_ci_low", "t_ci_low", tlo,
+                    f"paired seed-level t interval lower bound for {mname}, "
+                    f"arm '{arm}' (n={len(seeds)}, df={dfree}); amendment A6",
+                    must_print=False, stamp=f"{arm}::{mname}_t_ci_low")
+                add(f"{arm}__{mname}_t_ci_high", "t_ci_high", thi,
+                    f"paired seed-level t interval upper bound for {mname}, "
+                    f"arm '{arm}' (n={len(seeds)}, df={dfree}); amendment A6",
+                    must_print=False, stamp=f"{arm}::{mname}_t_ci_high")
+            add(f"{arm}__{mname}_signflip_p", "p_value", pv,
+                f"exact two-sided sign-flip permutation test on the {len(seeds)} "
+                f"seed values of {mname}, arm '{arm}'; floor for n={len(seeds)} "
+                f"is {2 / 2 ** len(seeds):.5f}",
+                must_print=False, stamp=f"{arm}::{mname}_signflip_p")
         for k in ("accepted_edits", "proposed_edits", "mem_chars", "mem_entries"):
             vals = [seedmap[s][k] for s in seeds]
             entry[k] = {"mean": statistics.fmean(vals), "per_seed": vals}
@@ -155,10 +238,16 @@ def main():
         d = [by_arm[a1][s][mname] - by_arm[a2][s][mname] for s in common]
         mu = statistics.fmean(d)
         lo, hi = boot_ci(d)
+        tlo, thi, tstat, dfree = paired_t(d)
         return {"pair": f"{a1}-minus-{a2}", "metric": mname, "n_seeds": len(common),
                 "seeds": common,
                 "mean": mu, "ci_low": lo, "ci_high": hi, "per_seed": d,
-                "excludes_zero": bool(lo is not None and (lo > 0 or hi < 0))}
+                "excludes_zero": bool(lo is not None and (lo > 0 or hi < 0)),
+                # Amendment A6, applied to every contrast without exception.
+                "t_ci_low": tlo, "t_ci_high": thi, "t_stat": tstat, "t_df": dfree,
+                "t_excludes_zero": bool(tlo is not None and (tlo > 0 or thi < 0)),
+                "bootstrap_ci_degenerate": bool(ci_is_degenerate(d, lo, hi)),
+                "signflip_p": signflip_p(d)}
 
     for a1, a2 in (("gated", "ungated"), ("neutral", "ungated"),
                    ("gated", "neutral"), ("gated", "neutralshort"),
@@ -172,17 +261,35 @@ def main():
             add(key, f"delta_{mname}", c["mean"],
                 f"paired-by-seed difference {a1} - {a2} on {mname} "
                 f"(n={c['n_seeds']} seeds); bootstrap B={B_BOOT}; "
-                f"CI excludes zero = {c['excludes_zero']}",
+                f"CI excludes zero = {c['excludes_zero']}; "
+                f"percentile CI degenerate (== [min,max]) = "
+                f"{c['bootstrap_ci_degenerate']}; sign-flip p = {c['signflip_p']}",
                 (c["ci_low"], c["ci_high"]), must_print=True,
                 stamp=f"contrast::{key}")
             add(f"{key}_ci_low", f"delta_{mname}_ci_low", c["ci_low"],
                 f"bootstrap 2.5th pct of paired difference {a1} - {a2} "
-                f"on {mname}", must_print=False,
+                f"on {mname} (n={c['n_seeds']})", must_print=False,
                 stamp=f"contrast::{key}_ci_low")
             add(f"{key}_ci_high", f"delta_{mname}_ci_high", c["ci_high"],
                 f"bootstrap 97.5th pct of paired difference {a1} - {a2} "
-                f"on {mname}", must_print=False,
+                f"on {mname} (n={c['n_seeds']})", must_print=False,
                 stamp=f"contrast::{key}_ci_high")
+            # Amendment A6: t interval alongside EVERY bootstrap interval.
+            if c["t_ci_low"] is not None:
+                add(f"{key}_t_ci_low", "t_ci_low", c["t_ci_low"],
+                    f"paired seed-level t interval lower bound, {a1} - {a2} "
+                    f"on {mname} (n={c['n_seeds']}, df={c['t_df']}); amendment A6",
+                    must_print=False, stamp=f"contrast::{key}_t_ci_low")
+                add(f"{key}_t_ci_high", "t_ci_high", c["t_ci_high"],
+                    f"paired seed-level t interval upper bound, {a1} - {a2} "
+                    f"on {mname} (n={c['n_seeds']}, df={c['t_df']}); amendment A6",
+                    must_print=False, stamp=f"contrast::{key}_t_ci_high")
+            add(f"{key}_signflip_p", "p_value", c["signflip_p"],
+                f"exact two-sided sign-flip permutation test on the "
+                f"{c['n_seeds']} paired seed differences of {a1} - {a2} on "
+                f"{mname}; floor for n={c['n_seeds']} is "
+                f"{2 / 2 ** c['n_seeds']:.5f}",
+                must_print=False, stamp=f"contrast::{key}_signflip_p")
 
     # ---- EXPLORATORY per-seed influence analysis (amendment A4) ------------
     # Added 2026-09-07, AFTER the primary results were known, in response to
@@ -193,16 +300,6 @@ def main():
     # 2^3 = 8 equally likely sign assignments, so its SMALLEST attainable
     # two-sided p-value is 2/8 = 0.25. Reporting it is the honest ceiling on
     # what three seeds can establish, whatever the bootstrap CI says.
-    def signflip_p(d):
-        n = len(d)
-        obs = abs(statistics.fmean(d))
-        hits = 0
-        for mask in range(2 ** n):
-            dd = [(-x if (mask >> i) & 1 else x) for i, x in enumerate(d)]
-            if abs(statistics.fmean(dd)) >= obs - 1e-12:
-                hits += 1
-        return hits / 2 ** n
-
     for a1, a2 in (("gated", "ungated"), ("neutral", "ungated"),
                    ("gated", "neutralshort")):
         for mname, _ in METRICS:
@@ -225,14 +322,110 @@ def main():
                         f"leave-one-seed-out mean of {a1} - {a2} on {mname}, "
                         f"seed {sd} dropped (exploratory, amendment A4)",
                         must_print=False, stamp=f"loo::{key}_drop{sd}")
-                pv = signflip_p(d)
-                c["signflip_p"] = pv
-                add(f"{key}_signflip_p", "p_value", pv,
+                # The t interval, the degeneracy flag and the sign-flip p are
+                # computed for EVERY contrast in contrast() above (amendment
+                # A6). These aliases keep the A4-era stamp names resolvable.
+                if c["t_ci_low"] is not None:
+                    add(f"{key}_t_ci_low_alias", "t_ci_low", c["t_ci_low"],
+                        f"paired seed-level t interval lower bound, "
+                        f"{a1} - {a2} on {mname} (df={c['t_df']})",
+                        must_print=False, stamp=f"tci::{key}_low")
+                    add(f"{key}_t_ci_high_alias", "t_ci_high", c["t_ci_high"],
+                        f"paired seed-level t interval upper bound, "
+                        f"{a1} - {a2} on {mname} (df={c['t_df']})",
+                        must_print=False, stamp=f"tci::{key}_high")
+                    add(f"{key}_t_alias", "t_stat", c["t_stat"],
+                        f"paired seed-level t statistic, {a1} - {a2} on "
+                        f"{mname} (df={c['t_df']})",
+                        must_print=False, stamp=f"tstat::{key}")
+                add(f"{key}_signflip_p_alias", "p_value", c["signflip_p"],
                     f"exact two-sided sign-flip permutation test on the "
                     f"{len(d)} paired seed differences of {a1} - {a2} on "
-                    f"{mname}; floor for n={len(d)} is {2 / 2 ** len(d):.2f} "
+                    f"{mname}; floor for n={len(d)} is {2 / 2 ** len(d):.5f} "
                     f"(exploratory, amendment A4)",
                     must_print=False, stamp=f"perm::{key}_p")
+
+    # ---- amendment A5 rule 3: the three-seed values, side by side ----------
+    # The six-seed numbers are the paper's primary result whatever they show.
+    # A5 also requires the original three-seed values to be shown next to them
+    # so a reader sees the trajectory, and A5 rule 5 requires every previously
+    # reported three-seed value to be exactly reproducible from this same
+    # six-seed ledger by restricting to seeds 1-3. We recompute them here from
+    # the identical code path rather than copying them from the old manuscript,
+    # which is what makes the reproducibility check meaningful.
+    SUB = [1, 2, 3]
+    n3_repro = {"checked": 0, "restricted_to": SUB}
+    for arm, seedmap in sorted(by_arm.items()):
+        sub = [s for s in SUB if s in seedmap]
+        if len(sub) != len(SUB):
+            continue
+        for mname, _ in METRICS:
+            vals = [seedmap[s][mname] for s in sub]
+            mu = statistics.fmean(vals)
+            lo, hi = boot_ci(vals)
+            tlo, thi, _t, dfree = paired_t(vals)
+            degen = ci_is_degenerate(vals, lo, hi)
+            n3_repro["checked"] += 1
+            add(f"n3_{arm}__{mname}", mname, mu,
+                f"THREE-SEED value of {mname}, arm '{arm}', recomputed from the "
+                f"six-seed ledger restricted to seeds {sub} (amendment A5 rule 3 "
+                f"side-by-side reporting / rule 5 reproducibility check); "
+                f"percentile CI degenerate = {bool(degen)}",
+                (lo, hi), must_print=False, stamp=f"n3_{arm}::{mname}")
+            add(f"n3_{arm}__{mname}_ci_low", "ci_low", lo,
+                f"three-seed bootstrap 2.5th pct of {mname}, arm '{arm}'",
+                must_print=False, stamp=f"n3_{arm}::{mname}_ci_low")
+            add(f"n3_{arm}__{mname}_ci_high", "ci_high", hi,
+                f"three-seed bootstrap 97.5th pct of {mname}, arm '{arm}'",
+                must_print=False, stamp=f"n3_{arm}::{mname}_ci_high")
+            if tlo is not None:
+                add(f"n3_{arm}__{mname}_t_ci_low", "t_ci_low", tlo,
+                    f"three-seed paired t interval lower bound for {mname}, "
+                    f"arm '{arm}' (df={dfree}); amendment A6",
+                    must_print=False, stamp=f"n3_{arm}::{mname}_t_ci_low")
+                add(f"n3_{arm}__{mname}_t_ci_high", "t_ci_high", thi,
+                    f"three-seed paired t interval upper bound for {mname}, "
+                    f"arm '{arm}' (df={dfree}); amendment A6",
+                    must_print=False, stamp=f"n3_{arm}::{mname}_t_ci_high")
+
+    for a1, a2 in (("gated", "ungated"), ("neutral", "ungated"),
+                   ("gated", "neutral"), ("gated", "neutralshort"),
+                   ("neutralshort", "ungated")):
+        if a1 not in by_arm or a2 not in by_arm:
+            continue
+        sub = [s for s in SUB if s in by_arm[a1] and s in by_arm[a2]]
+        if len(sub) != len(SUB):
+            continue
+        for mname, _ in METRICS:
+            d = [by_arm[a1][s][mname] - by_arm[a2][s][mname] for s in sub]
+            mu = statistics.fmean(d)
+            lo, hi = boot_ci(d)
+            tlo, thi, _t, dfree = paired_t(d)
+            degen = ci_is_degenerate(d, lo, hi)
+            key = f"{a1}_minus_{a2}__{mname}"
+            n3_repro["checked"] += 1
+            add(f"n3_{key}", f"delta_{mname}", mu,
+                f"THREE-SEED paired difference {a1} - {a2} on {mname}, "
+                f"recomputed from the six-seed ledger restricted to seeds {sub} "
+                f"(amendment A5 rules 3 and 5); percentile CI degenerate = "
+                f"{bool(degen)}; sign-flip p = {signflip_p(d)}",
+                (lo, hi), must_print=False, stamp=f"n3_contrast::{key}")
+            add(f"n3_{key}_ci_low", f"delta_{mname}_ci_low", lo,
+                f"three-seed bootstrap 2.5th pct, {a1} - {a2} on {mname}",
+                must_print=False, stamp=f"n3_contrast::{key}_ci_low")
+            add(f"n3_{key}_ci_high", f"delta_{mname}_ci_high", hi,
+                f"three-seed bootstrap 97.5th pct, {a1} - {a2} on {mname}",
+                must_print=False, stamp=f"n3_contrast::{key}_ci_high")
+            if tlo is not None:
+                add(f"n3_{key}_t_ci_low", "t_ci_low", tlo,
+                    f"three-seed paired t interval lower bound, {a1} - {a2} "
+                    f"on {mname} (df={dfree}); amendment A6",
+                    must_print=False, stamp=f"n3_contrast::{key}_t_ci_low")
+                add(f"n3_{key}_t_ci_high", "t_ci_high", thi,
+                    f"three-seed paired t interval upper bound, {a1} - {a2} "
+                    f"on {mname} (df={dfree}); amendment A6",
+                    must_print=False, stamp=f"n3_contrast::{key}_t_ci_high")
+    agg["n3_reproducibility"] = n3_repro
 
     # ---- McNemar robustness check (per-item, pooled across seeds) ----------
     items = [json.loads(l) for l in open(RUNS / "per_item.jsonl")]
@@ -294,11 +487,48 @@ def main():
                 f"on the SAME fixed item set. Null distribution of FG/BWT under "
                 f"'nothing was learned, only the sampling changed'.",
                 (lo, hi), must_print=True, stamp=f"noise_null::{fam}")
+            # Three-seed restriction of the pre-declared band, so the paper can
+            # show that a MAXIMUM grows mechanically with n (amendment A6).
+            sub_vals = [r[f"noise_{fam}"] for r in nn if r["seed"] in (1, 2, 3)]
+            if len(sub_vals) == 3:
+                add(f"n3_noise_null__{fam}_max_abs", "max_abs_delta",
+                    max(abs(v) for v in sub_vals),
+                    f"three-seed value of the pre-declared max absolute "
+                    f"round-0-vs-round-0 shift on family {fam}, recomputed from "
+                    f"the six-seed ledger (amendments A5/A6)",
+                    must_print=False, stamp=f"n3_noise::{fam}_max_abs")
             add(f"noise_null__{fam}_max_abs", "max_abs_delta", absmax,
                 f"largest absolute round-0 vs round-0 accuracy shift observed on "
                 f"family {fam} across seeds; any |BWT| below this is not "
                 f"distinguishable from evaluation noise",
                 must_print=False, stamp=f"noise_null::{fam}_max_abs")
+
+    # ---- SEM-based noise floor (amendment A6, exploratory) -----------------
+    # The pre-declared band is the MAX absolute per-seed shift. A maximum is an
+    # extreme-value order statistic: it grows mechanically as seeds are added,
+    # so the pre-declared band widens with n even if the noise does not. It also
+    # compares a 3-seed MEAN effect against a SINGLE-seed maximum. We therefore
+    # also report a margin of error built from the pooled null shifts.
+    try:
+        nrows = [json.loads(l) for l in open(RUNS / "noise_null.jsonl") if l.strip()]
+        shifts = [r[f"noise_{f}"] for r in nrows for f in ("A", "B", "C")]
+        if len(shifts) > 2:
+            sd_n = statistics.stdev(shifts)
+            n_seeds_null = len(nrows)
+            sem = sd_n / math.sqrt(n_seeds_null)
+            tcrit = {2: 4.3027, 5: 2.5706, 8: 2.306, 11: 2.201,
+                     17: 2.110}.get(len(shifts) - 1, 2.0)
+            add("noise_sem__sd", "sd", sd_n,
+                f"standard deviation of the {len(shifts)} pooled round-0-vs-round-0 "
+                f"null shifts (exploratory, amendment A6)",
+                must_print=False, stamp="noise_sem::sd")
+            add("noise_sem__margin", "margin", tcrit * sem,
+                f"95% margin of error for a {n_seeds_null}-seed mean under the "
+                f"null: t({len(shifts)-1})={tcrit} x {sd_n:.6f}/sqrt({n_seeds_null}) "
+                f"(exploratory, amendment A6)",
+                must_print=False, stamp="noise_sem::margin")
+    except FileNotFoundError:
+        pass
 
     # ---- protocol-failure accounting (a 3B model is asked to emit JSON) ----
     # A high protocol-failure rate is itself a finding and is never dropped.

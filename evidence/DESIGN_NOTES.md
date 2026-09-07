@@ -607,3 +607,30 @@ configuration, not a quantity to be re-estimated.
 **Hard stop.** If the run or the rebuild is not green by 2026-09-08 04:00 UTC,
 the six-seed work is abandoned and the tagged three-seed submission
 (`cl4fm-green-72`) ships unchanged.
+
+### Amendment A6 — statistical reporting corrections (EXPLORATORY, declared 2026-09-07, after a cross-family statistical review)
+
+Not pre-registered. Prompted by an external statistical review received while the
+six-seed run of A5 was executing. Three additions, none of which changes any
+measurement; all are recomputations of existing data.
+
+1. **The percentile bootstrap CI is degenerate at n=3 and we now say so.** At
+   small n the percentile interval is bounded below by `min(d)` and above by
+   `max(d)`, so when every per-seed difference shares a sign the interval
+   *cannot* contain zero whatever the effect size. Verified directly against our
+   own ledger: `gated - ungated` on CommonsenseQA has per-seed differences
+   [0.016667, 0.033333, 0.05] and a reported CI of exactly
+   [0.016667, 0.05] = [min, max]; `gated - neutralshort` likewise. So "CI
+   excludes zero" at n=3 carries no information beyond "the three seeds agree in
+   sign", which is the p=0.25 sign test we already report. A
+   `bootstrap_ci_degenerate` flag is now computed per contrast.
+2. **Seed-level paired t interval added.** Reported alongside the bootstrap. It
+   does not have the degeneracy above.
+3. **SEM-based noise floor added alongside the pre-declared max band.** The
+   pre-declared band is the maximum absolute per-seed shift; a maximum is an
+   extreme-value order statistic that grows mechanically as seeds are added, so
+   that band widens with n even when the noise does not --- which matters
+   precisely because A5 is adding seeds. It also compares a multi-seed *mean*
+   effect against a *single-seed* maximum. The pre-declared band is still
+   reported as pre-declared; the SEM margin is reported next to it as the
+   sounder comparison, and neither is dropped.

@@ -15,12 +15,24 @@ double-blind submission. Absolute paths have been replaced by placeholders
 An LLM agent that recursively self-evolves its persistent memory/skill library (learned
 insights, worked exemplars, procedural rules — no weight updates) on task family A for R
 rounds shows **negative backward transfer** on held-out task families B and C when edits
-are accepted by the agent's own self-judgement only ("ungated"). A **verifier + retention
-gate** (edits accepted only if an exogenous checker confirms improvement on A and accuracy
-on a small rehearsal set from B/C does not drop) yields higher (less negative) backward
-transfer. Both findings are pre-registered in `A2_PREDECLARATION_2026-09-07.md` before
-any data were collected. See `evidence/DESIGN_NOTES.md` for the full operational record
-and all deviations from the pre-registered design.
+are accepted by the agent's own self-judgement only ("ungated"), and that a **verifier +
+retention gate** (edits accepted only if an exogenous checker confirms improvement on A
+and accuracy on a small rehearsal set from B/C does not drop) yields higher (less
+negative) backward transfer. Both were pre-registered in
+`A2_PREDECLARATION_2026-09-07.md` before any data were collected — and **at six seeds
+both are refuted**, which is what the paper reports. The pre-declared *falsifier* does
+fire: a length-matched content-free memory arm degrades more than the evolved one, so the
+cost of a growing memory is context dilution rather than content interference.
+
+**Seed count matters when reading this repository.** The experiment first ran at three
+seeds; amendment **A5** extended it to six under a reporting rule fixed before the first
+new row existed, and amendment **A6** corrected the statistical reporting. The ledger,
+stamp manifest, `evidence/runs/`, `evidence/aggregates.json`, `EXPERIMENT_REPORT.md` and
+the figure in this repository are all the **six-seed** versions that the paper reports.
+`DOMAIN_AUDIT.md` and `CLAIMS.md` are the earlier **three-seed** audit documents, kept
+unedited as part of the record; each carries a header saying so, and `DOMAIN_AUDIT.md`
+tabulates exactly what A5 changed. See `evidence/DESIGN_NOTES.md` for the full
+operational record and every deviation from the pre-registered design.
 
 ---
 
@@ -71,6 +83,24 @@ All numeric results reported in the paper pass through the ledger
 (`evidence/cl4fm_selfevolve_forgetting_ledger.jsonl`) and are verified by `guard.py`
 against the stamp manifest.
 
+**Reproducing all six seeds.** `analysis/config_full.json` is the configuration frozen
+*before* the run and still names `"seeds": [1, 2, 3]` — it is deliberately left as
+written so the pre-run commitment is auditable. The six-seed grid of amendment A5 was
+produced by re-running the same harness with the extra seeds and no other change:
+
+```bash
+python3 analysis/harness.py --config analysis/config_full.json --arms ungated      --seeds 4,5,6
+python3 analysis/harness.py --config analysis/config_full.json --arms gated        --seeds 4,5,6
+python3 analysis/harness.py --config analysis/config_full.json --arms neutral      --seeds 4,5,6
+python3 analysis/harness.py --config analysis/config_full.json --arms neutralshort --seeds 4,5,6
+python3 analysis/harness.py --config analysis/config_full.json --noise-null        --seeds 4,5,6
+python3 analysis/aggregate.py && python3 analysis/make_figure.py
+```
+
+`analysis/aggregate.py` picks up whatever seeds are present in `evidence/runs/` and
+emits the ledger, the stamp manifest and `evidence/aggregates.json` for all of them. The
+six-seed records for every arm are already checked in under `evidence/runs/`.
+
 ---
 
 ## File inventory
@@ -78,9 +108,9 @@ against the stamp manifest.
 | Path | Description |
 |------|-------------|
 | `A2_PREDECLARATION_2026-09-07.md` | Pre-registration (binding design, before any data) |
-| `CLAIMS.md` | Machine-readable claim list with ledger cross-references |
-| `DOMAIN_AUDIT.md` | Domain validity audit |
-| `EXPERIMENT_REPORT.md` | Post-hoc report generated from `evidence/aggregates.json` |
+| `CLAIMS.md` | Claim/evidence/risk registry — **three-seed scope**, superseded in part by A5 |
+| `DOMAIN_AUDIT.md` | Domain validity audit — **three-seed scope**; its header tabulates what A5 changed |
+| `EXPERIMENT_REPORT.md` | Post-hoc report; numeric tables regenerated from `evidence/aggregates.json` (six seeds) |
 | `analysis/harness.py` | Core self-evolution harness |
 | `analysis/aggregate.py` | Ledger aggregation |
 | `analysis/make_figure.py` | Figure generation |

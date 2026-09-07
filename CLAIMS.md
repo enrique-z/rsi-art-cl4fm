@@ -5,7 +5,18 @@ Manuscript: `main.tex`. Evidence: `evidence/cl4fm_selfevolve_forgetting_ledger.j
 and `evidence/cl4fm_selfevolve_forgetting_stamp_manifest.json`, both emitted by
 `analysis/aggregate.py`.
 
-**State of this file (2026-09-07, final).** The grid has
+> **⚠ Scope: this registry was written against the three-seed grid.** Amendment
+> **A5** later extended the experiment to six seeds and both pre-registered
+> claims were refuted; amendment **A6** added a paired-*t* interval and a
+> sign-flip *p* beside every bootstrap CI. The registry is kept unedited as part
+> of the record of how the paper was checked, but the values and the
+> CI-excludes-zero judgements below are the **three-seed** ones and are
+> superseded. The authoritative six-seed numbers are the manifest
+> (`evidence/cl4fm_selfevolve_forgetting_stamp_manifest.json`, 612 rows), the
+> paper's Results section, and `EXPERIMENT_REPORT.md` §4–§6.
+> `DOMAIN_AUDIT.md` carries a three-seed/six-seed comparison table.
+
+**State of this file (2026-09-07, three-seed grid).** The grid has
 run, the ledger has landed, and every `\ResultCell` in `main.tex` has been
 resolved mechanically to a `\StampedCell`:
 

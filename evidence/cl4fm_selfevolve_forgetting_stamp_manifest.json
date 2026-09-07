@@ -1,1575 +1,3675 @@
 {
   "ledger_rows": {
     "gated::FG": {
-      "value": 0.016667,
+      "value": 0.019444,
       "claim_id": "gated__FG",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:1",
       "must_print": true
     },
     "gated::FG_ci_low": {
-      "value": -0.016667,
+      "value": -0.022222,
       "claim_id": "gated__FG_ci_low",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:2",
       "must_print": false
     },
     "gated::FG_ci_high": {
-      "value": 0.033333,
+      "value": 0.055556,
       "claim_id": "gated__FG_ci_high",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:3",
       "must_print": false
     },
-    "gated::BWT_B": {
-      "value": -0.027778,
-      "claim_id": "gated__BWT_B",
+    "gated::FG_t_ci_low": {
+      "value": -0.036325,
+      "claim_id": "gated__FG_t_ci_low",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:4",
-      "must_print": true
+      "must_print": false
     },
-    "gated::BWT_B_ci_low": {
-      "value": -0.116667,
-      "claim_id": "gated__BWT_B_ci_low",
+    "gated::FG_t_ci_high": {
+      "value": 0.075214,
+      "claim_id": "gated__FG_t_ci_high",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:5",
       "must_print": false
     },
-    "gated::BWT_B_ci_high": {
-      "value": 0.016667,
-      "claim_id": "gated__BWT_B_ci_high",
+    "gated::FG_signflip_p": {
+      "value": 0.46875,
+      "claim_id": "gated__FG_signflip_p",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:6",
       "must_print": false
     },
-    "gated::BWT_C": {
-      "value": -0.016667,
-      "claim_id": "gated__BWT_C",
+    "gated::BWT_B": {
+      "value": -0.038889,
+      "claim_id": "gated__BWT_B",
       "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:7",
+      "must_print": true
+    },
+    "gated::BWT_B_ci_low": {
+      "value": -0.077778,
+      "claim_id": "gated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:8",
+      "must_print": false
+    },
+    "gated::BWT_B_ci_high": {
+      "value": -0.002778,
+      "claim_id": "gated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:9",
+      "must_print": false
+    },
+    "gated::BWT_B_t_ci_low": {
+      "value": -0.094932,
+      "claim_id": "gated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:10",
+      "must_print": false
+    },
+    "gated::BWT_B_t_ci_high": {
+      "value": 0.017154,
+      "claim_id": "gated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:11",
+      "must_print": false
+    },
+    "gated::BWT_B_signflip_p": {
+      "value": 0.21875,
+      "claim_id": "gated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:12",
+      "must_print": false
+    },
+    "gated::BWT_C": {
+      "value": -0.022222,
+      "claim_id": "gated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:13",
       "must_print": true
     },
     "gated::BWT_C_ci_low": {
       "value": -0.066667,
       "claim_id": "gated__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:8",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:14",
       "must_print": false
     },
     "gated::BWT_C_ci_high": {
-      "value": 0.016667,
+      "value": 0.022222,
       "claim_id": "gated__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:9",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:15",
+      "must_print": false
+    },
+    "gated::BWT_C_t_ci_low": {
+      "value": -0.086408,
+      "claim_id": "gated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:16",
+      "must_print": false
+    },
+    "gated::BWT_C_t_ci_high": {
+      "value": 0.041963,
+      "claim_id": "gated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:17",
+      "must_print": false
+    },
+    "gated::BWT_C_signflip_p": {
+      "value": 0.5,
+      "claim_id": "gated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:18",
       "must_print": false
     },
     "gated::accepted_edits": {
-      "value": 3.0,
+      "value": 4.0,
       "claim_id": "gated__accepted_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:10",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:19",
       "must_print": false
     },
     "gated::accepted_edits_s1": {
       "value": 3,
       "claim_id": "gated__accepted_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:11",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:20",
       "must_print": false
     },
     "gated::accepted_edits_s2": {
       "value": 0,
       "claim_id": "gated__accepted_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:12",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:21",
       "must_print": false
     },
     "gated::accepted_edits_s3": {
       "value": 6,
       "claim_id": "gated__accepted_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:13",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:22",
+      "must_print": false
+    },
+    "gated::accepted_edits_s4": {
+      "value": 3,
+      "claim_id": "gated__accepted_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:23",
+      "must_print": false
+    },
+    "gated::accepted_edits_s5": {
+      "value": 3,
+      "claim_id": "gated__accepted_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:24",
+      "must_print": false
+    },
+    "gated::accepted_edits_s6": {
+      "value": 9,
+      "claim_id": "gated__accepted_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:25",
       "must_print": false
     },
     "gated::proposed_edits": {
       "value": 9.0,
       "claim_id": "gated__proposed_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:14",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:26",
       "must_print": false
     },
     "gated::proposed_edits_s1": {
       "value": 9,
       "claim_id": "gated__proposed_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:15",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:27",
       "must_print": false
     },
     "gated::proposed_edits_s2": {
       "value": 9,
       "claim_id": "gated__proposed_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:16",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:28",
       "must_print": false
     },
     "gated::proposed_edits_s3": {
       "value": 9,
       "claim_id": "gated__proposed_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:17",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:29",
+      "must_print": false
+    },
+    "gated::proposed_edits_s4": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:30",
+      "must_print": false
+    },
+    "gated::proposed_edits_s5": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:31",
+      "must_print": false
+    },
+    "gated::proposed_edits_s6": {
+      "value": 9,
+      "claim_id": "gated__proposed_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:32",
       "must_print": false
     },
     "gated::mem_chars": {
-      "value": 258.333333,
+      "value": 378.833333,
       "claim_id": "gated__mem_chars",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:18",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:33",
       "must_print": false
     },
     "gated::mem_chars_s1": {
       "value": 393,
       "claim_id": "gated__mem_chars_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:19",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:34",
       "must_print": false
     },
     "gated::mem_chars_s2": {
       "value": 0,
       "claim_id": "gated__mem_chars_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:20",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:35",
       "must_print": false
     },
     "gated::mem_chars_s3": {
       "value": 382,
       "claim_id": "gated__mem_chars_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:21",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:36",
+      "must_print": false
+    },
+    "gated::mem_chars_s4": {
+      "value": 375,
+      "claim_id": "gated__mem_chars_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:37",
+      "must_print": false
+    },
+    "gated::mem_chars_s5": {
+      "value": 414,
+      "claim_id": "gated__mem_chars_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:38",
+      "must_print": false
+    },
+    "gated::mem_chars_s6": {
+      "value": 709,
+      "claim_id": "gated__mem_chars_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:39",
       "must_print": false
     },
     "gated::mem_entries": {
-      "value": 2.333333,
+      "value": 3.0,
       "claim_id": "gated__mem_entries",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:22",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:40",
       "must_print": false
     },
     "gated::mem_entries_s1": {
       "value": 3,
       "claim_id": "gated__mem_entries_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:23",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:41",
       "must_print": false
     },
     "gated::mem_entries_s2": {
       "value": 0,
       "claim_id": "gated__mem_entries_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:24",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:42",
       "must_print": false
     },
     "gated::mem_entries_s3": {
       "value": 4,
       "claim_id": "gated__mem_entries_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:25",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:43",
+      "must_print": false
+    },
+    "gated::mem_entries_s4": {
+      "value": 3,
+      "claim_id": "gated__mem_entries_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:44",
+      "must_print": false
+    },
+    "gated::mem_entries_s5": {
+      "value": 3,
+      "claim_id": "gated__mem_entries_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:45",
+      "must_print": false
+    },
+    "gated::mem_entries_s6": {
+      "value": 5,
+      "claim_id": "gated__mem_entries_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:46",
       "must_print": false
     },
     "gated::acc0_A": {
-      "value": 0.722222,
+      "value": 0.725,
       "claim_id": "gated__acc0_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:26",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:47",
       "must_print": false
     },
     "gated::accR_A": {
-      "value": 0.738889,
+      "value": 0.744444,
       "claim_id": "gated__accR_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:27",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:48",
       "must_print": false
     },
     "gated::acc0_B": {
-      "value": 0.772222,
+      "value": 0.75,
       "claim_id": "gated__acc0_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:28",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:49",
       "must_print": false
     },
     "gated::accR_B": {
-      "value": 0.744444,
+      "value": 0.711111,
       "claim_id": "gated__accR_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:29",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:50",
       "must_print": false
     },
     "gated::acc0_C": {
-      "value": 0.738889,
+      "value": 0.733333,
       "claim_id": "gated__acc0_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:30",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:51",
       "must_print": false
     },
     "gated::accR_C": {
-      "value": 0.722222,
+      "value": 0.711111,
       "claim_id": "gated__accR_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:31",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:52",
       "must_print": false
     },
     "neutral::FG": {
-      "value": -0.05,
+      "value": -0.041667,
       "claim_id": "neutral__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:32",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:53",
       "must_print": true
     },
     "neutral::FG_ci_low": {
-      "value": -0.116667,
+      "value": -0.075,
       "claim_id": "neutral__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:33",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:54",
       "must_print": false
     },
     "neutral::FG_ci_high": {
-      "value": 0.0,
+      "value": -0.011111,
       "claim_id": "neutral__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:34",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:55",
+      "must_print": false
+    },
+    "neutral::FG_t_ci_low": {
+      "value": -0.088272,
+      "claim_id": "neutral__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:56",
+      "must_print": false
+    },
+    "neutral::FG_t_ci_high": {
+      "value": 0.004939,
+      "claim_id": "neutral__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:57",
+      "must_print": false
+    },
+    "neutral::FG_signflip_p": {
+      "value": 0.125,
+      "claim_id": "neutral__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:58",
       "must_print": false
     },
     "neutral::BWT_B": {
-      "value": -0.088889,
+      "value": -0.069444,
       "claim_id": "neutral__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:35",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:59",
       "must_print": true
     },
     "neutral::BWT_B_ci_low": {
-      "value": -0.133333,
+      "value": -0.102778,
       "claim_id": "neutral__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:36",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:60",
       "must_print": false
     },
     "neutral::BWT_B_ci_high": {
-      "value": -0.033333,
+      "value": -0.041667,
       "claim_id": "neutral__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:37",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:61",
+      "must_print": false
+    },
+    "neutral::BWT_B_t_ci_low": {
+      "value": -0.114265,
+      "claim_id": "neutral__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:62",
+      "must_print": false
+    },
+    "neutral::BWT_B_t_ci_high": {
+      "value": -0.024624,
+      "claim_id": "neutral__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:63",
+      "must_print": false
+    },
+    "neutral::BWT_B_signflip_p": {
+      "value": 0.03125,
+      "claim_id": "neutral__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:64",
       "must_print": false
     },
     "neutral::BWT_C": {
       "value": -0.055556,
       "claim_id": "neutral__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:38",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:65",
       "must_print": true
     },
     "neutral::BWT_C_ci_low": {
-      "value": -0.066667,
+      "value": -0.088889,
       "claim_id": "neutral__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:39",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:66",
       "must_print": false
     },
     "neutral::BWT_C_ci_high": {
-      "value": -0.033333,
+      "value": -0.016667,
       "claim_id": "neutral__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:40",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:67",
+      "must_print": false
+    },
+    "neutral::BWT_C_t_ci_low": {
+      "value": -0.109371,
+      "claim_id": "neutral__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:68",
+      "must_print": false
+    },
+    "neutral::BWT_C_t_ci_high": {
+      "value": -0.00174,
+      "claim_id": "neutral__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:69",
+      "must_print": false
+    },
+    "neutral::BWT_C_signflip_p": {
+      "value": 0.09375,
+      "claim_id": "neutral__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:70",
       "must_print": false
     },
     "neutral::accepted_edits": {
       "value": 6.0,
       "claim_id": "neutral__accepted_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:41",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:71",
       "must_print": false
     },
     "neutral::accepted_edits_s1": {
       "value": 6,
       "claim_id": "neutral__accepted_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:42",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:72",
       "must_print": false
     },
     "neutral::accepted_edits_s2": {
       "value": 6,
       "claim_id": "neutral__accepted_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:43",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:73",
       "must_print": false
     },
     "neutral::accepted_edits_s3": {
       "value": 6,
       "claim_id": "neutral__accepted_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:44",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:74",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s4": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:75",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s5": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:76",
+      "must_print": false
+    },
+    "neutral::accepted_edits_s6": {
+      "value": 6,
+      "claim_id": "neutral__accepted_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:77",
       "must_print": false
     },
     "neutral::proposed_edits": {
       "value": 6.0,
       "claim_id": "neutral__proposed_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:45",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:78",
       "must_print": false
     },
     "neutral::proposed_edits_s1": {
       "value": 6,
       "claim_id": "neutral__proposed_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:46",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:79",
       "must_print": false
     },
     "neutral::proposed_edits_s2": {
       "value": 6,
       "claim_id": "neutral__proposed_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:47",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:80",
       "must_print": false
     },
     "neutral::proposed_edits_s3": {
       "value": 6,
       "claim_id": "neutral__proposed_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:48",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:81",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s4": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:82",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s5": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:83",
+      "must_print": false
+    },
+    "neutral::proposed_edits_s6": {
+      "value": 6,
+      "claim_id": "neutral__proposed_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:84",
       "must_print": false
     },
     "neutral::mem_chars": {
-      "value": 416.666667,
+      "value": 420.0,
       "claim_id": "neutral__mem_chars",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:49",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:85",
       "must_print": false
     },
     "neutral::mem_chars_s1": {
       "value": 416,
       "claim_id": "neutral__mem_chars_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:50",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:86",
       "must_print": false
     },
     "neutral::mem_chars_s2": {
       "value": 421,
       "claim_id": "neutral__mem_chars_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:51",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:87",
       "must_print": false
     },
     "neutral::mem_chars_s3": {
       "value": 413,
       "claim_id": "neutral__mem_chars_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:52",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:88",
+      "must_print": false
+    },
+    "neutral::mem_chars_s4": {
+      "value": 420,
+      "claim_id": "neutral__mem_chars_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:89",
+      "must_print": false
+    },
+    "neutral::mem_chars_s5": {
+      "value": 429,
+      "claim_id": "neutral__mem_chars_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:90",
+      "must_print": false
+    },
+    "neutral::mem_chars_s6": {
+      "value": 421,
+      "claim_id": "neutral__mem_chars_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:91",
       "must_print": false
     },
     "neutral::mem_entries": {
       "value": 6.0,
       "claim_id": "neutral__mem_entries",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:53",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:92",
       "must_print": false
     },
     "neutral::mem_entries_s1": {
       "value": 6,
       "claim_id": "neutral__mem_entries_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:54",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:93",
       "must_print": false
     },
     "neutral::mem_entries_s2": {
       "value": 6,
       "claim_id": "neutral__mem_entries_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:55",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:94",
       "must_print": false
     },
     "neutral::mem_entries_s3": {
       "value": 6,
       "claim_id": "neutral__mem_entries_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:56",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:95",
+      "must_print": false
+    },
+    "neutral::mem_entries_s4": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:96",
+      "must_print": false
+    },
+    "neutral::mem_entries_s5": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:97",
+      "must_print": false
+    },
+    "neutral::mem_entries_s6": {
+      "value": 6,
+      "claim_id": "neutral__mem_entries_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:98",
       "must_print": false
     },
     "neutral::acc0_A": {
-      "value": 0.722222,
+      "value": 0.725,
       "claim_id": "neutral__acc0_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:57",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:99",
       "must_print": false
     },
     "neutral::accR_A": {
-      "value": 0.672222,
+      "value": 0.683333,
       "claim_id": "neutral__accR_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:58",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:100",
       "must_print": false
     },
     "neutral::acc0_B": {
-      "value": 0.772222,
+      "value": 0.75,
       "claim_id": "neutral__acc0_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:59",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:101",
       "must_print": false
     },
     "neutral::accR_B": {
-      "value": 0.683333,
+      "value": 0.680556,
       "claim_id": "neutral__accR_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:60",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:102",
       "must_print": false
     },
     "neutral::acc0_C": {
-      "value": 0.738889,
+      "value": 0.733333,
       "claim_id": "neutral__acc0_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:61",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:103",
       "must_print": false
     },
     "neutral::accR_C": {
-      "value": 0.683333,
+      "value": 0.677778,
       "claim_id": "neutral__accR_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:62",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:104",
       "must_print": false
     },
     "neutralshort::FG": {
-      "value": -0.055556,
+      "value": -0.044444,
       "claim_id": "neutralshort__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:63",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:105",
       "must_print": true
     },
     "neutralshort::FG_ci_low": {
-      "value": -0.1,
+      "value": -0.069444,
       "claim_id": "neutralshort__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:64",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:106",
       "must_print": false
     },
     "neutralshort::FG_ci_high": {
-      "value": -0.016667,
+      "value": -0.025,
       "claim_id": "neutralshort__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:65",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:107",
+      "must_print": false
+    },
+    "neutralshort::FG_t_ci_low": {
+      "value": -0.07701,
+      "claim_id": "neutralshort__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:108",
+      "must_print": false
+    },
+    "neutralshort::FG_t_ci_high": {
+      "value": -0.011879,
+      "claim_id": "neutralshort__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:109",
+      "must_print": false
+    },
+    "neutralshort::FG_signflip_p": {
+      "value": 0.03125,
+      "claim_id": "neutralshort__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:110",
       "must_print": false
     },
     "neutralshort::BWT_B": {
-      "value": -0.061111,
+      "value": -0.055556,
       "claim_id": "neutralshort__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:66",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:111",
       "must_print": true
     },
     "neutralshort::BWT_B_ci_low": {
-      "value": -0.133333,
+      "value": -0.1,
       "claim_id": "neutralshort__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:67",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:112",
       "must_print": false
     },
     "neutralshort::BWT_B_ci_high": {
-      "value": -0.016667,
+      "value": -0.011111,
       "claim_id": "neutralshort__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:68",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:113",
+      "must_print": false
+    },
+    "neutralshort::BWT_B_t_ci_low": {
+      "value": -0.12162,
+      "claim_id": "neutralshort__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:114",
+      "must_print": false
+    },
+    "neutralshort::BWT_B_t_ci_high": {
+      "value": 0.010509,
+      "claim_id": "neutralshort__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:115",
+      "must_print": false
+    },
+    "neutralshort::BWT_B_signflip_p": {
+      "value": 0.125,
+      "claim_id": "neutralshort__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:116",
       "must_print": false
     },
     "neutralshort::BWT_C": {
-      "value": -0.088889,
+      "value": -0.072222,
       "claim_id": "neutralshort__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:69",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:117",
       "must_print": true
     },
     "neutralshort::BWT_C_ci_low": {
-      "value": -0.1,
+      "value": -0.091667,
       "claim_id": "neutralshort__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:70",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:118",
       "must_print": false
     },
     "neutralshort::BWT_C_ci_high": {
-      "value": -0.083333,
+      "value": -0.041667,
       "claim_id": "neutralshort__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:71",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:119",
+      "must_print": false
+    },
+    "neutralshort::BWT_C_t_ci_low": {
+      "value": -0.110006,
+      "claim_id": "neutralshort__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:120",
+      "must_print": false
+    },
+    "neutralshort::BWT_C_t_ci_high": {
+      "value": -0.034438,
+      "claim_id": "neutralshort__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:121",
+      "must_print": false
+    },
+    "neutralshort::BWT_C_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "neutralshort__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:122",
       "must_print": false
     },
     "neutralshort::accepted_edits": {
       "value": 4.0,
       "claim_id": "neutralshort__accepted_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:72",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:123",
       "must_print": false
     },
     "neutralshort::accepted_edits_s1": {
       "value": 4,
       "claim_id": "neutralshort__accepted_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:73",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:124",
       "must_print": false
     },
     "neutralshort::accepted_edits_s2": {
       "value": 4,
       "claim_id": "neutralshort__accepted_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:74",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:125",
       "must_print": false
     },
     "neutralshort::accepted_edits_s3": {
       "value": 4,
       "claim_id": "neutralshort__accepted_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:75",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:126",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s4": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:127",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s5": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:128",
+      "must_print": false
+    },
+    "neutralshort::accepted_edits_s6": {
+      "value": 4,
+      "claim_id": "neutralshort__accepted_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:129",
       "must_print": false
     },
     "neutralshort::proposed_edits": {
       "value": 4.0,
       "claim_id": "neutralshort__proposed_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:76",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:130",
       "must_print": false
     },
     "neutralshort::proposed_edits_s1": {
       "value": 4,
       "claim_id": "neutralshort__proposed_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:77",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:131",
       "must_print": false
     },
     "neutralshort::proposed_edits_s2": {
       "value": 4,
       "claim_id": "neutralshort__proposed_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:78",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:132",
       "must_print": false
     },
     "neutralshort::proposed_edits_s3": {
       "value": 4,
       "claim_id": "neutralshort__proposed_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:79",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:133",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s4": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:134",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s5": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:135",
+      "must_print": false
+    },
+    "neutralshort::proposed_edits_s6": {
+      "value": 4,
+      "claim_id": "neutralshort__proposed_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:136",
       "must_print": false
     },
     "neutralshort::mem_chars": {
-      "value": 278.666667,
+      "value": 279.0,
       "claim_id": "neutralshort__mem_chars",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:80",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:137",
       "must_print": false
     },
     "neutralshort::mem_chars_s1": {
       "value": 276,
       "claim_id": "neutralshort__mem_chars_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:81",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:138",
       "must_print": false
     },
     "neutralshort::mem_chars_s2": {
       "value": 286,
       "claim_id": "neutralshort__mem_chars_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:82",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:139",
       "must_print": false
     },
     "neutralshort::mem_chars_s3": {
       "value": 274,
       "claim_id": "neutralshort__mem_chars_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:83",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:140",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s4": {
+      "value": 282,
+      "claim_id": "neutralshort__mem_chars_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:141",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s5": {
+      "value": 284,
+      "claim_id": "neutralshort__mem_chars_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:142",
+      "must_print": false
+    },
+    "neutralshort::mem_chars_s6": {
+      "value": 272,
+      "claim_id": "neutralshort__mem_chars_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:143",
       "must_print": false
     },
     "neutralshort::mem_entries": {
       "value": 4.0,
       "claim_id": "neutralshort__mem_entries",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:84",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:144",
       "must_print": false
     },
     "neutralshort::mem_entries_s1": {
       "value": 4,
       "claim_id": "neutralshort__mem_entries_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:85",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:145",
       "must_print": false
     },
     "neutralshort::mem_entries_s2": {
       "value": 4,
       "claim_id": "neutralshort__mem_entries_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:86",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:146",
       "must_print": false
     },
     "neutralshort::mem_entries_s3": {
       "value": 4,
       "claim_id": "neutralshort__mem_entries_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:87",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:147",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s4": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:148",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s5": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:149",
+      "must_print": false
+    },
+    "neutralshort::mem_entries_s6": {
+      "value": 4,
+      "claim_id": "neutralshort__mem_entries_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:150",
       "must_print": false
     },
     "neutralshort::acc0_A": {
-      "value": 0.722222,
+      "value": 0.725,
       "claim_id": "neutralshort__acc0_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:88",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:151",
       "must_print": false
     },
     "neutralshort::accR_A": {
-      "value": 0.666667,
+      "value": 0.680556,
       "claim_id": "neutralshort__accR_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:89",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:152",
       "must_print": false
     },
     "neutralshort::acc0_B": {
-      "value": 0.772222,
+      "value": 0.75,
       "claim_id": "neutralshort__acc0_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:90",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:153",
       "must_print": false
     },
     "neutralshort::accR_B": {
-      "value": 0.711111,
+      "value": 0.694444,
       "claim_id": "neutralshort__accR_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:91",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:154",
       "must_print": false
     },
     "neutralshort::acc0_C": {
-      "value": 0.738889,
+      "value": 0.733333,
       "claim_id": "neutralshort__acc0_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:92",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:155",
       "must_print": false
     },
     "neutralshort::accR_C": {
-      "value": 0.65,
+      "value": 0.661111,
       "claim_id": "neutralshort__accR_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:93",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:156",
       "must_print": false
     },
     "ungated::FG": {
-      "value": 0.033333,
+      "value": 0.022222,
       "claim_id": "ungated__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:94",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:157",
       "must_print": true
     },
     "ungated::FG_ci_low": {
-      "value": -0.016667,
+      "value": -0.011111,
       "claim_id": "ungated__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:95",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:158",
       "must_print": false
     },
     "ungated::FG_ci_high": {
-      "value": 0.066667,
+      "value": 0.058333,
       "claim_id": "ungated__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:96",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:159",
+      "must_print": false
+    },
+    "ungated::FG_t_ci_low": {
+      "value": -0.030444,
+      "claim_id": "ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:160",
+      "must_print": false
+    },
+    "ungated::FG_t_ci_high": {
+      "value": 0.074888,
+      "claim_id": "ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:161",
+      "must_print": false
+    },
+    "ungated::FG_signflip_p": {
+      "value": 0.375,
+      "claim_id": "ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:162",
       "must_print": false
     },
     "ungated::BWT_B": {
-      "value": -0.044444,
+      "value": -0.036111,
       "claim_id": "ungated__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:97",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:163",
       "must_print": true
     },
     "ungated::BWT_B_ci_low": {
-      "value": -0.116667,
+      "value": -0.075,
       "claim_id": "ungated__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:98",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:164",
       "must_print": false
     },
     "ungated::BWT_B_ci_high": {
-      "value": 0.016667,
+      "value": 0.002778,
       "claim_id": "ungated__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:99",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:165",
+      "must_print": false
+    },
+    "ungated::BWT_B_t_ci_low": {
+      "value": -0.092967,
+      "claim_id": "ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:166",
+      "must_print": false
+    },
+    "ungated::BWT_B_t_ci_high": {
+      "value": 0.020745,
+      "claim_id": "ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:167",
+      "must_print": false
+    },
+    "ungated::BWT_B_signflip_p": {
+      "value": 0.25,
+      "claim_id": "ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:168",
       "must_print": false
     },
     "ungated::BWT_C": {
-      "value": -0.05,
+      "value": -0.033333,
       "claim_id": "ungated__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:100",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:169",
       "must_print": true
     },
     "ungated::BWT_C_ci_low": {
-      "value": -0.083333,
+      "value": -0.061111,
       "claim_id": "ungated__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:101",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:170",
       "must_print": false
     },
     "ungated::BWT_C_ci_high": {
-      "value": -0.016667,
+      "value": 0.0,
       "claim_id": "ungated__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:102",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:171",
+      "must_print": false
+    },
+    "ungated::BWT_C_t_ci_low": {
+      "value": -0.081552,
+      "claim_id": "ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:172",
+      "must_print": false
+    },
+    "ungated::BWT_C_t_ci_high": {
+      "value": 0.014885,
+      "claim_id": "ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:173",
+      "must_print": false
+    },
+    "ungated::BWT_C_signflip_p": {
+      "value": 0.1875,
+      "claim_id": "ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:174",
       "must_print": false
     },
     "ungated::accepted_edits": {
       "value": 8.666667,
       "claim_id": "ungated__accepted_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:103",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:175",
       "must_print": false
     },
     "ungated::accepted_edits_s1": {
       "value": 8,
       "claim_id": "ungated__accepted_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:104",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:176",
       "must_print": false
     },
     "ungated::accepted_edits_s2": {
       "value": 9,
       "claim_id": "ungated__accepted_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:105",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:177",
       "must_print": false
     },
     "ungated::accepted_edits_s3": {
       "value": 9,
       "claim_id": "ungated__accepted_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:106",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:178",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s4": {
+      "value": 8,
+      "claim_id": "ungated__accepted_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:179",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s5": {
+      "value": 9,
+      "claim_id": "ungated__accepted_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:180",
+      "must_print": false
+    },
+    "ungated::accepted_edits_s6": {
+      "value": 9,
+      "claim_id": "ungated__accepted_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:181",
       "must_print": false
     },
     "ungated::proposed_edits": {
       "value": 9.0,
       "claim_id": "ungated__proposed_edits",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:107",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:182",
       "must_print": false
     },
     "ungated::proposed_edits_s1": {
       "value": 9,
       "claim_id": "ungated__proposed_edits_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:108",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:183",
       "must_print": false
     },
     "ungated::proposed_edits_s2": {
       "value": 9,
       "claim_id": "ungated__proposed_edits_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:109",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:184",
       "must_print": false
     },
     "ungated::proposed_edits_s3": {
       "value": 9,
       "claim_id": "ungated__proposed_edits_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:110",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:185",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s4": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:186",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s5": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:187",
+      "must_print": false
+    },
+    "ungated::proposed_edits_s6": {
+      "value": 9,
+      "claim_id": "ungated__proposed_edits_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:188",
       "must_print": false
     },
     "ungated::mem_chars": {
-      "value": 403.0,
+      "value": 518.166667,
       "claim_id": "ungated__mem_chars",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:111",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:189",
       "must_print": false
     },
     "ungated::mem_chars_s1": {
       "value": 282,
       "claim_id": "ungated__mem_chars_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:112",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:190",
       "must_print": false
     },
     "ungated::mem_chars_s2": {
       "value": 468,
       "claim_id": "ungated__mem_chars_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:113",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:191",
       "must_print": false
     },
     "ungated::mem_chars_s3": {
       "value": 459,
       "claim_id": "ungated__mem_chars_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:114",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:192",
+      "must_print": false
+    },
+    "ungated::mem_chars_s4": {
+      "value": 512,
+      "claim_id": "ungated__mem_chars_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:193",
+      "must_print": false
+    },
+    "ungated::mem_chars_s5": {
+      "value": 588,
+      "claim_id": "ungated__mem_chars_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:194",
+      "must_print": false
+    },
+    "ungated::mem_chars_s6": {
+      "value": 800,
+      "claim_id": "ungated__mem_chars_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:195",
       "must_print": false
     },
     "ungated::mem_entries": {
-      "value": 4.0,
+      "value": 4.333333,
       "claim_id": "ungated__mem_entries",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:115",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:196",
       "must_print": false
     },
     "ungated::mem_entries_s1": {
       "value": 2,
       "claim_id": "ungated__mem_entries_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:116",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:197",
       "must_print": false
     },
     "ungated::mem_entries_s2": {
       "value": 5,
       "claim_id": "ungated__mem_entries_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:117",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:198",
       "must_print": false
     },
     "ungated::mem_entries_s3": {
       "value": 5,
       "claim_id": "ungated__mem_entries_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:118",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:199",
+      "must_print": false
+    },
+    "ungated::mem_entries_s4": {
+      "value": 4,
+      "claim_id": "ungated__mem_entries_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:200",
+      "must_print": false
+    },
+    "ungated::mem_entries_s5": {
+      "value": 5,
+      "claim_id": "ungated__mem_entries_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:201",
+      "must_print": false
+    },
+    "ungated::mem_entries_s6": {
+      "value": 5,
+      "claim_id": "ungated__mem_entries_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:202",
       "must_print": false
     },
     "ungated::acc0_A": {
-      "value": 0.722222,
+      "value": 0.725,
       "claim_id": "ungated__acc0_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:119",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:203",
       "must_print": false
     },
     "ungated::accR_A": {
-      "value": 0.755556,
+      "value": 0.747222,
       "claim_id": "ungated__accR_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:120",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:204",
       "must_print": false
     },
     "ungated::acc0_B": {
-      "value": 0.772222,
+      "value": 0.75,
       "claim_id": "ungated__acc0_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:121",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:205",
       "must_print": false
     },
     "ungated::accR_B": {
-      "value": 0.727778,
+      "value": 0.713889,
       "claim_id": "ungated__accR_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:122",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:206",
       "must_print": false
     },
     "ungated::acc0_C": {
-      "value": 0.738889,
+      "value": 0.733333,
       "claim_id": "ungated__acc0_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:123",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:207",
       "must_print": false
     },
     "ungated::accR_C": {
-      "value": 0.688889,
+      "value": 0.7,
       "claim_id": "ungated__accR_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:124",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:208",
       "must_print": false
     },
     "contrast::gated_minus_ungated__FG": {
-      "value": -0.016667,
+      "value": -0.002778,
       "claim_id": "gated_minus_ungated__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:125",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:209",
       "must_print": true
     },
     "contrast::gated_minus_ungated__FG_ci_low": {
-      "value": -0.033333,
+      "value": -0.030556,
       "claim_id": "gated_minus_ungated__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:126",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:210",
       "must_print": false
     },
     "contrast::gated_minus_ungated__FG_ci_high": {
-      "value": 0.0,
+      "value": 0.033333,
       "claim_id": "gated_minus_ungated__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:127",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:211",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__FG_t_ci_low": {
+      "value": -0.051522,
+      "claim_id": "gated_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:212",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__FG_t_ci_high": {
+      "value": 0.045967,
+      "claim_id": "gated_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:213",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__FG_signflip_p": {
+      "value": 1.0,
+      "claim_id": "gated_minus_ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:214",
       "must_print": false
     },
     "contrast::gated_minus_ungated__BWT_B": {
-      "value": 0.016667,
+      "value": -0.002778,
       "claim_id": "gated_minus_ungated__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:128",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:215",
       "must_print": true
     },
     "contrast::gated_minus_ungated__BWT_B_ci_low": {
-      "value": 0.0,
+      "value": -0.038889,
       "claim_id": "gated_minus_ungated__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:129",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:216",
       "must_print": false
     },
     "contrast::gated_minus_ungated__BWT_B_ci_high": {
-      "value": 0.05,
+      "value": 0.025,
       "claim_id": "gated_minus_ungated__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:130",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:217",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.048944,
+      "claim_id": "gated_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:218",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_B_t_ci_high": {
+      "value": 0.043388,
+      "claim_id": "gated_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:219",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_B_signflip_p": {
+      "value": 1.0,
+      "claim_id": "gated_minus_ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:220",
       "must_print": false
     },
     "contrast::gated_minus_ungated__BWT_C": {
-      "value": 0.033333,
+      "value": 0.011111,
       "claim_id": "gated_minus_ungated__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:131",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:221",
       "must_print": true
     },
     "contrast::gated_minus_ungated__BWT_C_ci_low": {
-      "value": 0.016667,
+      "value": -0.016667,
       "claim_id": "gated_minus_ungated__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:132",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:222",
       "must_print": false
     },
     "contrast::gated_minus_ungated__BWT_C_ci_high": {
-      "value": 0.05,
+      "value": 0.033333,
       "claim_id": "gated_minus_ungated__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:133",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:223",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.025018,
+      "claim_id": "gated_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:224",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_C_t_ci_high": {
+      "value": 0.04724,
+      "claim_id": "gated_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:225",
+      "must_print": false
+    },
+    "contrast::gated_minus_ungated__BWT_C_signflip_p": {
+      "value": 0.5625,
+      "claim_id": "gated_minus_ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:226",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__FG": {
-      "value": -0.083333,
+      "value": -0.063889,
       "claim_id": "neutral_minus_ungated__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:134",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:227",
       "must_print": true
     },
     "contrast::neutral_minus_ungated__FG_ci_low": {
-      "value": -0.1,
+      "value": -0.097222,
       "claim_id": "neutral_minus_ungated__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:135",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:228",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__FG_ci_high": {
-      "value": -0.066667,
+      "value": -0.027778,
       "claim_id": "neutral_minus_ungated__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:136",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:229",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__FG_t_ci_low": {
+      "value": -0.115082,
+      "claim_id": "neutral_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:230",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__FG_t_ci_high": {
+      "value": -0.012696,
+      "claim_id": "neutral_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:231",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__FG_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "neutral_minus_ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:232",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__BWT_B": {
-      "value": -0.044444,
+      "value": -0.033333,
       "claim_id": "neutral_minus_ungated__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:137",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:233",
       "must_print": true
     },
     "contrast::neutral_minus_ungated__BWT_B_ci_low": {
-      "value": -0.066667,
+      "value": -0.052778,
       "claim_id": "neutral_minus_ungated__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:138",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:234",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__BWT_B_ci_high": {
-      "value": -0.016667,
+      "value": -0.013889,
       "claim_id": "neutral_minus_ungated__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:139",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:235",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.06043,
+      "claim_id": "neutral_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:236",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_B_t_ci_high": {
+      "value": -0.006237,
+      "claim_id": "neutral_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:237",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_B_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "neutral_minus_ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:238",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__BWT_C": {
-      "value": -0.005556,
+      "value": -0.022222,
       "claim_id": "neutral_minus_ungated__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:140",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:239",
       "must_print": true
     },
     "contrast::neutral_minus_ungated__BWT_C_ci_low": {
-      "value": -0.05,
+      "value": -0.047222,
       "claim_id": "neutral_minus_ungated__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:141",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:240",
       "must_print": false
     },
     "contrast::neutral_minus_ungated__BWT_C_ci_high": {
-      "value": 0.016667,
+      "value": 0.002778,
       "claim_id": "neutral_minus_ungated__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:142",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:241",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.058351,
+      "claim_id": "neutral_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:242",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_C_t_ci_high": {
+      "value": 0.013906,
+      "claim_id": "neutral_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:243",
+      "must_print": false
+    },
+    "contrast::neutral_minus_ungated__BWT_C_signflip_p": {
+      "value": 0.25,
+      "claim_id": "neutral_minus_ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:244",
       "must_print": false
     },
     "contrast::gated_minus_neutral__FG": {
-      "value": 0.066667,
+      "value": 0.061111,
       "claim_id": "gated_minus_neutral__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:143",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:245",
       "must_print": true
     },
     "contrast::gated_minus_neutral__FG_ci_low": {
-      "value": 0.033333,
+      "value": 0.005556,
       "claim_id": "gated_minus_neutral__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:144",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:246",
       "must_print": false
     },
     "contrast::gated_minus_neutral__FG_ci_high": {
-      "value": 0.1,
+      "value": 0.105556,
       "claim_id": "gated_minus_neutral__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:145",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:247",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__FG_t_ci_low": {
+      "value": -0.01282,
+      "claim_id": "gated_minus_neutral__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:248",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__FG_t_ci_high": {
+      "value": 0.135043,
+      "claim_id": "gated_minus_neutral__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:249",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__FG_signflip_p": {
+      "value": 0.125,
+      "claim_id": "gated_minus_neutral__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:250",
       "must_print": false
     },
     "contrast::gated_minus_neutral__BWT_B": {
-      "value": 0.061111,
+      "value": 0.030556,
       "claim_id": "gated_minus_neutral__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:146",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:251",
       "must_print": true
     },
     "contrast::gated_minus_neutral__BWT_B_ci_low": {
-      "value": 0.016667,
+      "value": -0.002778,
       "claim_id": "gated_minus_neutral__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:147",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:252",
       "must_print": false
     },
     "contrast::gated_minus_neutral__BWT_B_ci_high": {
-      "value": 0.116667,
+      "value": 0.066667,
       "claim_id": "gated_minus_neutral__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:148",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:253",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_B_t_ci_low": {
+      "value": -0.021819,
+      "claim_id": "gated_minus_neutral__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:254",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_B_t_ci_high": {
+      "value": 0.08293,
+      "claim_id": "gated_minus_neutral__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:255",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_B_signflip_p": {
+      "value": 0.25,
+      "claim_id": "gated_minus_neutral__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:256",
       "must_print": false
     },
     "contrast::gated_minus_neutral__BWT_C": {
-      "value": 0.038889,
+      "value": 0.033333,
       "claim_id": "gated_minus_neutral__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:149",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:257",
       "must_print": true
     },
     "contrast::gated_minus_neutral__BWT_C_ci_low": {
-      "value": 0.0,
+      "value": 0.013889,
       "claim_id": "gated_minus_neutral__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:150",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:258",
       "must_print": false
     },
     "contrast::gated_minus_neutral__BWT_C_ci_high": {
-      "value": 0.083333,
+      "value": 0.055556,
       "claim_id": "gated_minus_neutral__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:151",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:259",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_C_t_ci_low": {
+      "value": 0.004066,
+      "claim_id": "gated_minus_neutral__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:260",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_C_t_ci_high": {
+      "value": 0.062601,
+      "claim_id": "gated_minus_neutral__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:261",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutral__BWT_C_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "gated_minus_neutral__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:262",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__FG": {
-      "value": 0.072222,
+      "value": 0.063889,
       "claim_id": "gated_minus_neutralshort__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:152",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:263",
       "must_print": true
     },
     "contrast::gated_minus_neutralshort__FG_ci_low": {
-      "value": 0.033333,
+      "value": 0.025,
       "claim_id": "gated_minus_neutralshort__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:153",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:264",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__FG_ci_high": {
-      "value": 0.133333,
+      "value": 0.102778,
       "claim_id": "gated_minus_neutralshort__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:154",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:265",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__FG_t_ci_low": {
+      "value": 0.005967,
+      "claim_id": "gated_minus_neutralshort__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:266",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__FG_t_ci_high": {
+      "value": 0.121811,
+      "claim_id": "gated_minus_neutralshort__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:267",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__FG_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "gated_minus_neutralshort__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:268",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__BWT_B": {
-      "value": 0.033333,
+      "value": 0.016667,
       "claim_id": "gated_minus_neutralshort__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:155",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:269",
       "must_print": true
     },
     "contrast::gated_minus_neutralshort__BWT_B_ci_low": {
-      "value": 0.016667,
+      "value": -0.013889,
       "claim_id": "gated_minus_neutralshort__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:156",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:270",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__BWT_B_ci_high": {
-      "value": 0.05,
+      "value": 0.041667,
       "claim_id": "gated_minus_neutralshort__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:157",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:271",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_B_t_ci_low": {
+      "value": -0.023218,
+      "claim_id": "gated_minus_neutralshort__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:272",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_B_t_ci_high": {
+      "value": 0.056552,
+      "claim_id": "gated_minus_neutralshort__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:273",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_B_signflip_p": {
+      "value": 0.4375,
+      "claim_id": "gated_minus_neutralshort__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:274",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__BWT_C": {
-      "value": 0.072222,
+      "value": 0.05,
       "claim_id": "gated_minus_neutralshort__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:158",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:275",
       "must_print": true
     },
     "contrast::gated_minus_neutralshort__BWT_C_ci_low": {
-      "value": 0.016667,
+      "value": 0.013889,
       "claim_id": "gated_minus_neutralshort__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:159",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:276",
       "must_print": false
     },
     "contrast::gated_minus_neutralshort__BWT_C_ci_high": {
-      "value": 0.116667,
+      "value": 0.083333,
       "claim_id": "gated_minus_neutralshort__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:160",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:277",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_C_t_ci_low": {
+      "value": -0.000693,
+      "claim_id": "gated_minus_neutralshort__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:278",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_C_t_ci_high": {
+      "value": 0.100693,
+      "claim_id": "gated_minus_neutralshort__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:279",
+      "must_print": false
+    },
+    "contrast::gated_minus_neutralshort__BWT_C_signflip_p": {
+      "value": 0.09375,
+      "claim_id": "gated_minus_neutralshort__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:280",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__FG": {
-      "value": -0.088889,
+      "value": -0.066667,
       "claim_id": "neutralshort_minus_ungated__FG",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:161",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:281",
       "must_print": true
     },
     "contrast::neutralshort_minus_ungated__FG_ci_low": {
-      "value": -0.166667,
+      "value": -0.113889,
       "claim_id": "neutralshort_minus_ungated__FG_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:162",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:282",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__FG_ci_high": {
-      "value": -0.033333,
+      "value": -0.022222,
       "claim_id": "neutralshort_minus_ungated__FG_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:163",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:283",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__FG_t_ci_low": {
+      "value": -0.135749,
+      "claim_id": "neutralshort_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:284",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__FG_t_ci_high": {
+      "value": 0.002416,
+      "claim_id": "neutralshort_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:285",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__FG_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "neutralshort_minus_ungated__FG_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:286",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__BWT_B": {
-      "value": -0.016667,
+      "value": -0.019444,
       "claim_id": "neutralshort_minus_ungated__BWT_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:164",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:287",
       "must_print": true
     },
     "contrast::neutralshort_minus_ungated__BWT_B_ci_low": {
-      "value": -0.05,
+      "value": -0.069444,
       "claim_id": "neutralshort_minus_ungated__BWT_B_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:165",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:288",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__BWT_B_ci_high": {
-      "value": 0.016667,
+      "value": 0.022222,
       "claim_id": "neutralshort_minus_ungated__BWT_B_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:166",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:289",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.088009,
+      "claim_id": "neutralshort_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:290",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B_t_ci_high": {
+      "value": 0.04912,
+      "claim_id": "neutralshort_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:291",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_B_signflip_p": {
+      "value": 0.6875,
+      "claim_id": "neutralshort_minus_ungated__BWT_B_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:292",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__BWT_C": {
       "value": -0.038889,
       "claim_id": "neutralshort_minus_ungated__BWT_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:167",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:293",
       "must_print": true
     },
     "contrast::neutralshort_minus_ungated__BWT_C_ci_low": {
-      "value": -0.083333,
+      "value": -0.058333,
       "claim_id": "neutralshort_minus_ungated__BWT_C_ci_low",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:168",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:294",
       "must_print": false
     },
     "contrast::neutralshort_minus_ungated__BWT_C_ci_high": {
-      "value": 0.0,
+      "value": -0.019444,
       "claim_id": "neutralshort_minus_ungated__BWT_C_ci_high",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:169",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:295",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.067451,
+      "claim_id": "neutralshort_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:296",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C_t_ci_high": {
+      "value": -0.010327,
+      "claim_id": "neutralshort_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:297",
+      "must_print": false
+    },
+    "contrast::neutralshort_minus_ungated__BWT_C_signflip_p": {
+      "value": 0.0625,
+      "claim_id": "neutralshort_minus_ungated__BWT_C_signflip_p",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:298",
       "must_print": false
     },
     "perseed::gated_minus_ungated__FG_s1": {
       "value": -0.016667,
       "claim_id": "gated_minus_ungated__FG_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:170",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:299",
       "must_print": false
     },
     "perseed::gated_minus_ungated__FG_s2": {
       "value": 0.0,
       "claim_id": "gated_minus_ungated__FG_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:171",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:300",
       "must_print": false
     },
     "perseed::gated_minus_ungated__FG_s3": {
       "value": -0.033333,
       "claim_id": "gated_minus_ungated__FG_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:172",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:301",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s4": {
+      "value": 0.083333,
+      "claim_id": "gated_minus_ungated__FG_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:302",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s5": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__FG_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:303",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__FG_s6": {
+      "value": -0.05,
+      "claim_id": "gated_minus_ungated__FG_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:304",
       "must_print": false
     },
     "loo::gated_minus_ungated__FG_drop1": {
-      "value": -0.016667,
+      "value": -0.0,
       "claim_id": "gated_minus_ungated__FG_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:173",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:305",
       "must_print": false
     },
     "loo::gated_minus_ungated__FG_drop2": {
-      "value": -0.025,
+      "value": -0.003333,
       "claim_id": "gated_minus_ungated__FG_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:174",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:306",
       "must_print": false
     },
     "loo::gated_minus_ungated__FG_drop3": {
-      "value": -0.008333,
+      "value": 0.003333,
       "claim_id": "gated_minus_ungated__FG_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:175",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:307",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop4": {
+      "value": -0.02,
+      "claim_id": "gated_minus_ungated__FG_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:308",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop5": {
+      "value": -0.003333,
+      "claim_id": "gated_minus_ungated__FG_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:309",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__FG_drop6": {
+      "value": 0.006667,
+      "claim_id": "gated_minus_ungated__FG_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:310",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__FG_low": {
+      "value": -0.051522,
+      "claim_id": "gated_minus_ungated__FG_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:311",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__FG_high": {
+      "value": 0.045967,
+      "claim_id": "gated_minus_ungated__FG_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:312",
+      "must_print": false
+    },
+    "tstat::gated_minus_ungated__FG": {
+      "value": -0.14649,
+      "claim_id": "gated_minus_ungated__FG_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:313",
       "must_print": false
     },
     "perm::gated_minus_ungated__FG_p": {
-      "value": 0.5,
-      "claim_id": "gated_minus_ungated__FG_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:176",
+      "value": 1.0,
+      "claim_id": "gated_minus_ungated__FG_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:314",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_B_s1": {
       "value": 0.0,
       "claim_id": "gated_minus_ungated__BWT_B_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:177",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:315",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_B_s2": {
       "value": 0.05,
       "claim_id": "gated_minus_ungated__BWT_B_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:178",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:316",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_B_s3": {
       "value": 0.0,
       "claim_id": "gated_minus_ungated__BWT_B_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:179",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:317",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s4": {
+      "value": -0.083333,
+      "claim_id": "gated_minus_ungated__BWT_B_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:318",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s5": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_ungated__BWT_B_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:319",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_B_s6": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_B_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:320",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_B_drop1": {
-      "value": 0.025,
+      "value": -0.003333,
       "claim_id": "gated_minus_ungated__BWT_B_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:180",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:321",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_B_drop2": {
-      "value": 0.0,
+      "value": -0.013333,
       "claim_id": "gated_minus_ungated__BWT_B_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:181",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:322",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_B_drop3": {
-      "value": 0.025,
+      "value": -0.003333,
       "claim_id": "gated_minus_ungated__BWT_B_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:182",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:323",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop4": {
+      "value": 0.013333,
+      "claim_id": "gated_minus_ungated__BWT_B_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:324",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop5": {
+      "value": -0.006667,
+      "claim_id": "gated_minus_ungated__BWT_B_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:325",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_B_drop6": {
+      "value": -0.003333,
+      "claim_id": "gated_minus_ungated__BWT_B_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:326",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__BWT_B_low": {
+      "value": -0.048944,
+      "claim_id": "gated_minus_ungated__BWT_B_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:327",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__BWT_B_high": {
+      "value": 0.043388,
+      "claim_id": "gated_minus_ungated__BWT_B_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:328",
+      "must_print": false
+    },
+    "tstat::gated_minus_ungated__BWT_B": {
+      "value": -0.154672,
+      "claim_id": "gated_minus_ungated__BWT_B_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:329",
       "must_print": false
     },
     "perm::gated_minus_ungated__BWT_B_p": {
       "value": 1.0,
-      "claim_id": "gated_minus_ungated__BWT_B_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:183",
+      "claim_id": "gated_minus_ungated__BWT_B_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:330",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_C_s1": {
       "value": 0.016667,
       "claim_id": "gated_minus_ungated__BWT_C_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:184",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:331",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_C_s2": {
       "value": 0.033333,
       "claim_id": "gated_minus_ungated__BWT_C_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:185",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:332",
       "must_print": false
     },
     "perseed::gated_minus_ungated__BWT_C_s3": {
       "value": 0.05,
       "claim_id": "gated_minus_ungated__BWT_C_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:186",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:333",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s4": {
+      "value": -0.05,
+      "claim_id": "gated_minus_ungated__BWT_C_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:334",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s5": {
+      "value": 0.0,
+      "claim_id": "gated_minus_ungated__BWT_C_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:335",
+      "must_print": false
+    },
+    "perseed::gated_minus_ungated__BWT_C_s6": {
+      "value": 0.016667,
+      "claim_id": "gated_minus_ungated__BWT_C_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:336",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_C_drop1": {
-      "value": 0.041667,
+      "value": 0.01,
       "claim_id": "gated_minus_ungated__BWT_C_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:187",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:337",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_C_drop2": {
-      "value": 0.033333,
+      "value": 0.006667,
       "claim_id": "gated_minus_ungated__BWT_C_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:188",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:338",
       "must_print": false
     },
     "loo::gated_minus_ungated__BWT_C_drop3": {
-      "value": 0.025,
+      "value": 0.003333,
       "claim_id": "gated_minus_ungated__BWT_C_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:189",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:339",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop4": {
+      "value": 0.023333,
+      "claim_id": "gated_minus_ungated__BWT_C_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:340",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop5": {
+      "value": 0.013333,
+      "claim_id": "gated_minus_ungated__BWT_C_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:341",
+      "must_print": false
+    },
+    "loo::gated_minus_ungated__BWT_C_drop6": {
+      "value": 0.01,
+      "claim_id": "gated_minus_ungated__BWT_C_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:342",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__BWT_C_low": {
+      "value": -0.025018,
+      "claim_id": "gated_minus_ungated__BWT_C_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:343",
+      "must_print": false
+    },
+    "tci::gated_minus_ungated__BWT_C_high": {
+      "value": 0.04724,
+      "claim_id": "gated_minus_ungated__BWT_C_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:344",
+      "must_print": false
+    },
+    "tstat::gated_minus_ungated__BWT_C": {
+      "value": 0.790569,
+      "claim_id": "gated_minus_ungated__BWT_C_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:345",
       "must_print": false
     },
     "perm::gated_minus_ungated__BWT_C_p": {
-      "value": 0.25,
-      "claim_id": "gated_minus_ungated__BWT_C_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:190",
+      "value": 0.5625,
+      "claim_id": "gated_minus_ungated__BWT_C_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:346",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__FG_s1": {
       "value": -0.083333,
       "claim_id": "neutral_minus_ungated__FG_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:191",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:347",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__FG_s2": {
       "value": -0.1,
       "claim_id": "neutral_minus_ungated__FG_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:192",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:348",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__FG_s3": {
       "value": -0.066667,
       "claim_id": "neutral_minus_ungated__FG_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:193",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:349",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s4": {
+      "value": -0.033333,
+      "claim_id": "neutral_minus_ungated__FG_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:350",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s5": {
+      "value": -0.116667,
+      "claim_id": "neutral_minus_ungated__FG_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:351",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__FG_s6": {
+      "value": 0.016667,
+      "claim_id": "neutral_minus_ungated__FG_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:352",
       "must_print": false
     },
     "loo::neutral_minus_ungated__FG_drop1": {
-      "value": -0.083333,
+      "value": -0.06,
       "claim_id": "neutral_minus_ungated__FG_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:194",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:353",
       "must_print": false
     },
     "loo::neutral_minus_ungated__FG_drop2": {
-      "value": -0.075,
+      "value": -0.056667,
       "claim_id": "neutral_minus_ungated__FG_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:195",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:354",
       "must_print": false
     },
     "loo::neutral_minus_ungated__FG_drop3": {
-      "value": -0.091667,
+      "value": -0.063333,
       "claim_id": "neutral_minus_ungated__FG_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:196",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:355",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop4": {
+      "value": -0.07,
+      "claim_id": "neutral_minus_ungated__FG_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:356",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop5": {
+      "value": -0.053333,
+      "claim_id": "neutral_minus_ungated__FG_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:357",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__FG_drop6": {
+      "value": -0.08,
+      "claim_id": "neutral_minus_ungated__FG_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:358",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__FG_low": {
+      "value": -0.115082,
+      "claim_id": "neutral_minus_ungated__FG_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:359",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__FG_high": {
+      "value": -0.012696,
+      "claim_id": "neutral_minus_ungated__FG_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:360",
+      "must_print": false
+    },
+    "tstat::neutral_minus_ungated__FG": {
+      "value": -3.208088,
+      "claim_id": "neutral_minus_ungated__FG_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:361",
       "must_print": false
     },
     "perm::neutral_minus_ungated__FG_p": {
-      "value": 0.25,
-      "claim_id": "neutral_minus_ungated__FG_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:197",
+      "value": 0.0625,
+      "claim_id": "neutral_minus_ungated__FG_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:362",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_B_s1": {
       "value": -0.05,
       "claim_id": "neutral_minus_ungated__BWT_B_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:198",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:363",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_B_s2": {
       "value": -0.066667,
       "claim_id": "neutral_minus_ungated__BWT_B_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:199",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:364",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_B_s3": {
       "value": -0.016667,
       "claim_id": "neutral_minus_ungated__BWT_B_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:200",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:365",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s4": {
+      "value": -0.05,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:366",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s5": {
+      "value": 0.0,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:367",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_B_s6": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_B_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:368",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_B_drop1": {
-      "value": -0.041667,
+      "value": -0.03,
       "claim_id": "neutral_minus_ungated__BWT_B_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:201",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:369",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_B_drop2": {
-      "value": -0.033333,
+      "value": -0.026667,
       "claim_id": "neutral_minus_ungated__BWT_B_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:202",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:370",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_B_drop3": {
-      "value": -0.058333,
+      "value": -0.036667,
       "claim_id": "neutral_minus_ungated__BWT_B_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:203",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:371",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop4": {
+      "value": -0.03,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:372",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop5": {
+      "value": -0.04,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:373",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_B_drop6": {
+      "value": -0.036667,
+      "claim_id": "neutral_minus_ungated__BWT_B_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:374",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__BWT_B_low": {
+      "value": -0.06043,
+      "claim_id": "neutral_minus_ungated__BWT_B_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:375",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__BWT_B_high": {
+      "value": -0.006237,
+      "claim_id": "neutral_minus_ungated__BWT_B_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:376",
+      "must_print": false
+    },
+    "tstat::neutral_minus_ungated__BWT_B": {
+      "value": -3.162278,
+      "claim_id": "neutral_minus_ungated__BWT_B_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:377",
       "must_print": false
     },
     "perm::neutral_minus_ungated__BWT_B_p": {
-      "value": 0.25,
-      "claim_id": "neutral_minus_ungated__BWT_B_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:204",
+      "value": 0.0625,
+      "claim_id": "neutral_minus_ungated__BWT_B_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:378",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_C_s1": {
       "value": 0.016667,
       "claim_id": "neutral_minus_ungated__BWT_C_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:205",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:379",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_C_s2": {
       "value": -0.05,
       "claim_id": "neutral_minus_ungated__BWT_C_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:206",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:380",
       "must_print": false
     },
     "perseed::neutral_minus_ungated__BWT_C_s3": {
       "value": 0.016667,
       "claim_id": "neutral_minus_ungated__BWT_C_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:207",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:381",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s4": {
+      "value": -0.066667,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:382",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s5": {
+      "value": -0.033333,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:383",
+      "must_print": false
+    },
+    "perseed::neutral_minus_ungated__BWT_C_s6": {
+      "value": -0.016667,
+      "claim_id": "neutral_minus_ungated__BWT_C_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:384",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_C_drop1": {
-      "value": -0.016667,
+      "value": -0.03,
       "claim_id": "neutral_minus_ungated__BWT_C_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:208",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:385",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_C_drop2": {
-      "value": 0.016667,
+      "value": -0.016667,
       "claim_id": "neutral_minus_ungated__BWT_C_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:209",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:386",
       "must_print": false
     },
     "loo::neutral_minus_ungated__BWT_C_drop3": {
-      "value": -0.016667,
+      "value": -0.03,
       "claim_id": "neutral_minus_ungated__BWT_C_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:210",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:387",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop4": {
+      "value": -0.013333,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:388",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop5": {
+      "value": -0.02,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:389",
+      "must_print": false
+    },
+    "loo::neutral_minus_ungated__BWT_C_drop6": {
+      "value": -0.023333,
+      "claim_id": "neutral_minus_ungated__BWT_C_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:390",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__BWT_C_low": {
+      "value": -0.058351,
+      "claim_id": "neutral_minus_ungated__BWT_C_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:391",
+      "must_print": false
+    },
+    "tci::neutral_minus_ungated__BWT_C_high": {
+      "value": 0.013906,
+      "claim_id": "neutral_minus_ungated__BWT_C_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:392",
+      "must_print": false
+    },
+    "tstat::neutral_minus_ungated__BWT_C": {
+      "value": -1.581139,
+      "claim_id": "neutral_minus_ungated__BWT_C_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:393",
       "must_print": false
     },
     "perm::neutral_minus_ungated__BWT_C_p": {
-      "value": 1.0,
-      "claim_id": "neutral_minus_ungated__BWT_C_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:211",
+      "value": 0.25,
+      "claim_id": "neutral_minus_ungated__BWT_C_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:394",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__FG_s1": {
       "value": 0.05,
       "claim_id": "gated_minus_neutralshort__FG_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:212",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:395",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__FG_s2": {
       "value": 0.033333,
       "claim_id": "gated_minus_neutralshort__FG_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:213",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:396",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__FG_s3": {
       "value": 0.133333,
       "claim_id": "gated_minus_neutralshort__FG_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:214",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:397",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s4": {
+      "value": 0.066667,
+      "claim_id": "gated_minus_neutralshort__FG_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:398",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s5": {
+      "value": 0.116667,
+      "claim_id": "gated_minus_neutralshort__FG_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:399",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__FG_s6": {
+      "value": -0.016667,
+      "claim_id": "gated_minus_neutralshort__FG_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:400",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__FG_drop1": {
-      "value": 0.083333,
+      "value": 0.066667,
       "claim_id": "gated_minus_neutralshort__FG_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:215",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:401",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__FG_drop2": {
-      "value": 0.091667,
+      "value": 0.07,
       "claim_id": "gated_minus_neutralshort__FG_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:216",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:402",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__FG_drop3": {
-      "value": 0.041667,
+      "value": 0.05,
       "claim_id": "gated_minus_neutralshort__FG_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:217",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:403",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop4": {
+      "value": 0.063333,
+      "claim_id": "gated_minus_neutralshort__FG_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:404",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop5": {
+      "value": 0.053333,
+      "claim_id": "gated_minus_neutralshort__FG_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:405",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__FG_drop6": {
+      "value": 0.08,
+      "claim_id": "gated_minus_neutralshort__FG_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:406",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__FG_low": {
+      "value": 0.005967,
+      "claim_id": "gated_minus_neutralshort__FG_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:407",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__FG_high": {
+      "value": 0.121811,
+      "claim_id": "gated_minus_neutralshort__FG_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:408",
+      "must_print": false
+    },
+    "tstat::gated_minus_neutralshort__FG": {
+      "value": 2.835404,
+      "claim_id": "gated_minus_neutralshort__FG_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:409",
       "must_print": false
     },
     "perm::gated_minus_neutralshort__FG_p": {
-      "value": 0.25,
-      "claim_id": "gated_minus_neutralshort__FG_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:218",
+      "value": 0.0625,
+      "claim_id": "gated_minus_neutralshort__FG_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:410",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_B_s1": {
       "value": 0.05,
       "claim_id": "gated_minus_neutralshort__BWT_B_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:219",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:411",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_B_s2": {
       "value": 0.033333,
       "claim_id": "gated_minus_neutralshort__BWT_B_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:220",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:412",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_B_s3": {
       "value": 0.016667,
       "claim_id": "gated_minus_neutralshort__BWT_B_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:221",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:413",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s4": {
+      "value": 0.05,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:414",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s5": {
+      "value": 0.0,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:415",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_B_s6": {
+      "value": -0.05,
+      "claim_id": "gated_minus_neutralshort__BWT_B_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:416",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_B_drop1": {
-      "value": 0.025,
+      "value": 0.01,
       "claim_id": "gated_minus_neutralshort__BWT_B_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:222",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:417",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_B_drop2": {
-      "value": 0.033333,
+      "value": 0.013333,
       "claim_id": "gated_minus_neutralshort__BWT_B_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:223",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:418",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_B_drop3": {
-      "value": 0.041667,
+      "value": 0.016667,
       "claim_id": "gated_minus_neutralshort__BWT_B_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:224",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:419",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop4": {
+      "value": 0.01,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:420",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop5": {
+      "value": 0.02,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:421",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_B_drop6": {
+      "value": 0.03,
+      "claim_id": "gated_minus_neutralshort__BWT_B_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:422",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__BWT_B_low": {
+      "value": -0.023218,
+      "claim_id": "gated_minus_neutralshort__BWT_B_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:423",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__BWT_B_high": {
+      "value": 0.056552,
+      "claim_id": "gated_minus_neutralshort__BWT_B_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:424",
+      "must_print": false
+    },
+    "tstat::gated_minus_neutralshort__BWT_B": {
+      "value": 1.074172,
+      "claim_id": "gated_minus_neutralshort__BWT_B_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:425",
       "must_print": false
     },
     "perm::gated_minus_neutralshort__BWT_B_p": {
-      "value": 0.25,
-      "claim_id": "gated_minus_neutralshort__BWT_B_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:225",
+      "value": 0.4375,
+      "claim_id": "gated_minus_neutralshort__BWT_B_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:426",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_C_s1": {
       "value": 0.016667,
       "claim_id": "gated_minus_neutralshort__BWT_C_seed1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:226",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:427",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_C_s2": {
       "value": 0.116667,
       "claim_id": "gated_minus_neutralshort__BWT_C_seed2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:227",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:428",
       "must_print": false
     },
     "perseed::gated_minus_neutralshort__BWT_C_s3": {
       "value": 0.083333,
       "claim_id": "gated_minus_neutralshort__BWT_C_seed3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:228",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:429",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s4": {
+      "value": -0.016667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:430",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s5": {
+      "value": 0.033333,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:431",
+      "must_print": false
+    },
+    "perseed::gated_minus_neutralshort__BWT_C_s6": {
+      "value": 0.066667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_seed6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:432",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_C_drop1": {
-      "value": 0.1,
+      "value": 0.056667,
       "claim_id": "gated_minus_neutralshort__BWT_C_drop1",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:229",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:433",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_C_drop2": {
-      "value": 0.05,
+      "value": 0.036667,
       "claim_id": "gated_minus_neutralshort__BWT_C_drop2",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:230",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:434",
       "must_print": false
     },
     "loo::gated_minus_neutralshort__BWT_C_drop3": {
-      "value": 0.066667,
+      "value": 0.043333,
       "claim_id": "gated_minus_neutralshort__BWT_C_drop3",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:231",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:435",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop4": {
+      "value": 0.063333,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop4",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:436",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop5": {
+      "value": 0.053333,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop5",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:437",
+      "must_print": false
+    },
+    "loo::gated_minus_neutralshort__BWT_C_drop6": {
+      "value": 0.046667,
+      "claim_id": "gated_minus_neutralshort__BWT_C_drop6",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:438",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__BWT_C_low": {
+      "value": -0.000693,
+      "claim_id": "gated_minus_neutralshort__BWT_C_t_ci_low_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:439",
+      "must_print": false
+    },
+    "tci::gated_minus_neutralshort__BWT_C_high": {
+      "value": 0.100693,
+      "claim_id": "gated_minus_neutralshort__BWT_C_t_ci_high_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:440",
+      "must_print": false
+    },
+    "tstat::gated_minus_neutralshort__BWT_C": {
+      "value": 2.535463,
+      "claim_id": "gated_minus_neutralshort__BWT_C_t_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:441",
       "must_print": false
     },
     "perm::gated_minus_neutralshort__BWT_C_p": {
-      "value": 0.25,
-      "claim_id": "gated_minus_neutralshort__BWT_C_signflip_p",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:232",
+      "value": 0.09375,
+      "claim_id": "gated_minus_neutralshort__BWT_C_signflip_p_alias",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:442",
+      "must_print": false
+    },
+    "n3_gated::FG": {
+      "value": 0.016667,
+      "claim_id": "n3_gated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:443",
+      "must_print": false
+    },
+    "n3_gated::FG_ci_low": {
+      "value": -0.016667,
+      "claim_id": "n3_gated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:444",
+      "must_print": false
+    },
+    "n3_gated::FG_ci_high": {
+      "value": 0.033333,
+      "claim_id": "n3_gated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:445",
+      "must_print": false
+    },
+    "n3_gated::FG_t_ci_low": {
+      "value": -0.055045,
+      "claim_id": "n3_gated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:446",
+      "must_print": false
+    },
+    "n3_gated::FG_t_ci_high": {
+      "value": 0.088378,
+      "claim_id": "n3_gated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:447",
+      "must_print": false
+    },
+    "n3_gated::BWT_B": {
+      "value": -0.027778,
+      "claim_id": "n3_gated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:448",
+      "must_print": false
+    },
+    "n3_gated::BWT_B_ci_low": {
+      "value": -0.116667,
+      "claim_id": "n3_gated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:449",
+      "must_print": false
+    },
+    "n3_gated::BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "n3_gated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:450",
+      "must_print": false
+    },
+    "n3_gated::BWT_B_t_ci_low": {
+      "value": -0.219009,
+      "claim_id": "n3_gated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:451",
+      "must_print": false
+    },
+    "n3_gated::BWT_B_t_ci_high": {
+      "value": 0.163453,
+      "claim_id": "n3_gated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:452",
+      "must_print": false
+    },
+    "n3_gated::BWT_C": {
+      "value": -0.016667,
+      "claim_id": "n3_gated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:453",
+      "must_print": false
+    },
+    "n3_gated::BWT_C_ci_low": {
+      "value": -0.066667,
+      "claim_id": "n3_gated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:454",
+      "must_print": false
+    },
+    "n3_gated::BWT_C_ci_high": {
+      "value": 0.016667,
+      "claim_id": "n3_gated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:455",
+      "must_print": false
+    },
+    "n3_gated::BWT_C_t_ci_low": {
+      "value": -0.126208,
+      "claim_id": "n3_gated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:456",
+      "must_print": false
+    },
+    "n3_gated::BWT_C_t_ci_high": {
+      "value": 0.092875,
+      "claim_id": "n3_gated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:457",
+      "must_print": false
+    },
+    "n3_neutral::FG": {
+      "value": -0.05,
+      "claim_id": "n3_neutral__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:458",
+      "must_print": false
+    },
+    "n3_neutral::FG_ci_low": {
+      "value": -0.116667,
+      "claim_id": "n3_neutral__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:459",
+      "must_print": false
+    },
+    "n3_neutral::FG_ci_high": {
+      "value": 0.0,
+      "claim_id": "n3_neutral__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:460",
+      "must_print": false
+    },
+    "n3_neutral::FG_t_ci_low": {
+      "value": -0.19928,
+      "claim_id": "n3_neutral__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:461",
+      "must_print": false
+    },
+    "n3_neutral::FG_t_ci_high": {
+      "value": 0.09928,
+      "claim_id": "n3_neutral__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:462",
+      "must_print": false
+    },
+    "n3_neutral::BWT_B": {
+      "value": -0.088889,
+      "claim_id": "n3_neutral__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:463",
+      "must_print": false
+    },
+    "n3_neutral::BWT_B_ci_low": {
+      "value": -0.133333,
+      "claim_id": "n3_neutral__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:464",
+      "must_print": false
+    },
+    "n3_neutral::BWT_B_ci_high": {
+      "value": -0.033333,
+      "claim_id": "n3_neutral__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:465",
+      "must_print": false
+    },
+    "n3_neutral::BWT_B_t_ci_low": {
+      "value": -0.215376,
+      "claim_id": "n3_neutral__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:466",
+      "must_print": false
+    },
+    "n3_neutral::BWT_B_t_ci_high": {
+      "value": 0.037599,
+      "claim_id": "n3_neutral__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:467",
+      "must_print": false
+    },
+    "n3_neutral::BWT_C": {
+      "value": -0.055556,
+      "claim_id": "n3_neutral__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:468",
+      "must_print": false
+    },
+    "n3_neutral::BWT_C_ci_low": {
+      "value": -0.066667,
+      "claim_id": "n3_neutral__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:469",
+      "must_print": false
+    },
+    "n3_neutral::BWT_C_ci_high": {
+      "value": -0.033333,
+      "claim_id": "n3_neutral__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:470",
+      "must_print": false
+    },
+    "n3_neutral::BWT_C_t_ci_low": {
+      "value": -0.103363,
+      "claim_id": "n3_neutral__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:471",
+      "must_print": false
+    },
+    "n3_neutral::BWT_C_t_ci_high": {
+      "value": -0.007748,
+      "claim_id": "n3_neutral__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:472",
+      "must_print": false
+    },
+    "n3_neutralshort::FG": {
+      "value": -0.055556,
+      "claim_id": "n3_neutralshort__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:473",
+      "must_print": false
+    },
+    "n3_neutralshort::FG_ci_low": {
+      "value": -0.1,
+      "claim_id": "n3_neutralshort__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:474",
+      "must_print": false
+    },
+    "n3_neutralshort::FG_ci_high": {
+      "value": -0.016667,
+      "claim_id": "n3_neutralshort__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:475",
+      "must_print": false
+    },
+    "n3_neutralshort::FG_t_ci_low": {
+      "value": -0.15975,
+      "claim_id": "n3_neutralshort__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:476",
+      "must_print": false
+    },
+    "n3_neutralshort::FG_t_ci_high": {
+      "value": 0.048639,
+      "claim_id": "n3_neutralshort__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:477",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_B": {
+      "value": -0.061111,
+      "claim_id": "n3_neutralshort__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:478",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_B_ci_low": {
+      "value": -0.133333,
+      "claim_id": "n3_neutralshort__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:479",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_B_ci_high": {
+      "value": -0.016667,
+      "claim_id": "n3_neutralshort__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:480",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_B_t_ci_low": {
+      "value": -0.217859,
+      "claim_id": "n3_neutralshort__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:481",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_B_t_ci_high": {
+      "value": 0.095637,
+      "claim_id": "n3_neutralshort__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:482",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_C": {
+      "value": -0.088889,
+      "claim_id": "n3_neutralshort__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:483",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_C_ci_low": {
+      "value": -0.1,
+      "claim_id": "n3_neutralshort__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:484",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_C_ci_high": {
+      "value": -0.083333,
+      "claim_id": "n3_neutralshort__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:485",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_C_t_ci_low": {
+      "value": -0.112793,
+      "claim_id": "n3_neutralshort__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:486",
+      "must_print": false
+    },
+    "n3_neutralshort::BWT_C_t_ci_high": {
+      "value": -0.064985,
+      "claim_id": "n3_neutralshort__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:487",
+      "must_print": false
+    },
+    "n3_ungated::FG": {
+      "value": 0.033333,
+      "claim_id": "n3_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:488",
+      "must_print": false
+    },
+    "n3_ungated::FG_ci_low": {
+      "value": -0.016667,
+      "claim_id": "n3_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:489",
+      "must_print": false
+    },
+    "n3_ungated::FG_ci_high": {
+      "value": 0.066667,
+      "claim_id": "n3_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:490",
+      "must_print": false
+    },
+    "n3_ungated::FG_t_ci_low": {
+      "value": -0.076208,
+      "claim_id": "n3_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:491",
+      "must_print": false
+    },
+    "n3_ungated::FG_t_ci_high": {
+      "value": 0.142875,
+      "claim_id": "n3_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:492",
+      "must_print": false
+    },
+    "n3_ungated::BWT_B": {
+      "value": -0.044444,
+      "claim_id": "n3_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:493",
+      "must_print": false
+    },
+    "n3_ungated::BWT_B_ci_low": {
+      "value": -0.116667,
+      "claim_id": "n3_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:494",
+      "must_print": false
+    },
+    "n3_ungated::BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "n3_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:495",
+      "must_print": false
+    },
+    "n3_ungated::BWT_B_t_ci_low": {
+      "value": -0.211772,
+      "claim_id": "n3_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:496",
+      "must_print": false
+    },
+    "n3_ungated::BWT_B_t_ci_high": {
+      "value": 0.122883,
+      "claim_id": "n3_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:497",
+      "must_print": false
+    },
+    "n3_ungated::BWT_C": {
+      "value": -0.05,
+      "claim_id": "n3_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:498",
+      "must_print": false
+    },
+    "n3_ungated::BWT_C_ci_low": {
+      "value": -0.083333,
+      "claim_id": "n3_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:499",
+      "must_print": false
+    },
+    "n3_ungated::BWT_C_ci_high": {
+      "value": -0.016667,
+      "claim_id": "n3_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:500",
+      "must_print": false
+    },
+    "n3_ungated::BWT_C_t_ci_low": {
+      "value": -0.132806,
+      "claim_id": "n3_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:501",
+      "must_print": false
+    },
+    "n3_ungated::BWT_C_t_ci_high": {
+      "value": 0.032806,
+      "claim_id": "n3_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:502",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__FG": {
+      "value": -0.016667,
+      "claim_id": "n3_gated_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:503",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__FG_ci_low": {
+      "value": -0.033333,
+      "claim_id": "n3_gated_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:504",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__FG_ci_high": {
+      "value": 0.0,
+      "claim_id": "n3_gated_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:505",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__FG_t_ci_low": {
+      "value": -0.058069,
+      "claim_id": "n3_gated_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:506",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__FG_t_ci_high": {
+      "value": 0.024736,
+      "claim_id": "n3_gated_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:507",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_B": {
+      "value": 0.016667,
+      "claim_id": "n3_gated_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:508",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_B_ci_low": {
+      "value": 0.0,
+      "claim_id": "n3_gated_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:509",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_B_ci_high": {
+      "value": 0.05,
+      "claim_id": "n3_gated_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:510",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.055045,
+      "claim_id": "n3_gated_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:511",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_B_t_ci_high": {
+      "value": 0.088378,
+      "claim_id": "n3_gated_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:512",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_C": {
+      "value": 0.033333,
+      "claim_id": "n3_gated_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:513",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_C_ci_low": {
+      "value": 0.016667,
+      "claim_id": "n3_gated_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:514",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_C_ci_high": {
+      "value": 0.05,
+      "claim_id": "n3_gated_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:515",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.008069,
+      "claim_id": "n3_gated_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:516",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_ungated__BWT_C_t_ci_high": {
+      "value": 0.074736,
+      "claim_id": "n3_gated_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:517",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__FG": {
+      "value": -0.083333,
+      "claim_id": "n3_neutral_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:518",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__FG_ci_low": {
+      "value": -0.1,
+      "claim_id": "n3_neutral_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:519",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__FG_ci_high": {
+      "value": -0.066667,
+      "claim_id": "n3_neutral_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:520",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__FG_t_ci_low": {
+      "value": -0.124736,
+      "claim_id": "n3_neutral_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:521",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__FG_t_ci_high": {
+      "value": -0.041931,
+      "claim_id": "n3_neutral_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:522",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_B": {
+      "value": -0.044444,
+      "claim_id": "n3_neutral_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:523",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_B_ci_low": {
+      "value": -0.066667,
+      "claim_id": "n3_neutral_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:524",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_B_ci_high": {
+      "value": -0.016667,
+      "claim_id": "n3_neutral_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:525",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.107688,
+      "claim_id": "n3_neutral_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:526",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_B_t_ci_high": {
+      "value": 0.018799,
+      "claim_id": "n3_neutral_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:527",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_C": {
+      "value": -0.005556,
+      "claim_id": "n3_neutral_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:528",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_C_ci_low": {
+      "value": -0.05,
+      "claim_id": "n3_neutral_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:529",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_C_ci_high": {
+      "value": 0.016667,
+      "claim_id": "n3_neutral_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:530",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.101171,
+      "claim_id": "n3_neutral_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:531",
+      "must_print": false
+    },
+    "n3_contrast::neutral_minus_ungated__BWT_C_t_ci_high": {
+      "value": 0.09006,
+      "claim_id": "n3_neutral_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:532",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__FG": {
+      "value": 0.066667,
+      "claim_id": "n3_gated_minus_neutral__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:533",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__FG_ci_low": {
+      "value": 0.033333,
+      "claim_id": "n3_gated_minus_neutral__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:534",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__FG_ci_high": {
+      "value": 0.1,
+      "claim_id": "n3_gated_minus_neutral__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:535",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__FG_t_ci_low": {
+      "value": -0.016139,
+      "claim_id": "n3_gated_minus_neutral__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:536",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__FG_t_ci_high": {
+      "value": 0.149472,
+      "claim_id": "n3_gated_minus_neutral__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:537",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_B": {
+      "value": 0.061111,
+      "claim_id": "n3_gated_minus_neutral__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:538",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_B_ci_low": {
+      "value": 0.016667,
+      "claim_id": "n3_gated_minus_neutral__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:539",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_B_ci_high": {
+      "value": 0.116667,
+      "claim_id": "n3_gated_minus_neutral__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:540",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_B_t_ci_low": {
+      "value": -0.065376,
+      "claim_id": "n3_gated_minus_neutral__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:541",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_B_t_ci_high": {
+      "value": 0.187599,
+      "claim_id": "n3_gated_minus_neutral__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:542",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_C": {
+      "value": 0.038889,
+      "claim_id": "n3_gated_minus_neutral__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:543",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_C_ci_low": {
+      "value": 0.0,
+      "claim_id": "n3_gated_minus_neutral__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:544",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_C_ci_high": {
+      "value": 0.083333,
+      "claim_id": "n3_gated_minus_neutral__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:545",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_C_t_ci_low": {
+      "value": -0.065306,
+      "claim_id": "n3_gated_minus_neutral__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:546",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutral__BWT_C_t_ci_high": {
+      "value": 0.143084,
+      "claim_id": "n3_gated_minus_neutral__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:547",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__FG": {
+      "value": 0.072222,
+      "claim_id": "n3_gated_minus_neutralshort__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:548",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__FG_ci_low": {
+      "value": 0.033333,
+      "claim_id": "n3_gated_minus_neutralshort__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:549",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__FG_ci_high": {
+      "value": 0.133333,
+      "claim_id": "n3_gated_minus_neutralshort__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:550",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__FG_t_ci_low": {
+      "value": -0.060869,
+      "claim_id": "n3_gated_minus_neutralshort__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:551",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__FG_t_ci_high": {
+      "value": 0.205313,
+      "claim_id": "n3_gated_minus_neutralshort__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:552",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_B": {
+      "value": 0.033333,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:553",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_B_ci_low": {
+      "value": 0.016667,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:554",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_B_ci_high": {
+      "value": 0.05,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:555",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_B_t_ci_low": {
+      "value": -0.008069,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:556",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_B_t_ci_high": {
+      "value": 0.074736,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:557",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_C": {
+      "value": 0.072222,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:558",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_C_ci_low": {
+      "value": 0.016667,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:559",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_C_ci_high": {
+      "value": 0.116667,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:560",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_C_t_ci_low": {
+      "value": -0.054265,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:561",
+      "must_print": false
+    },
+    "n3_contrast::gated_minus_neutralshort__BWT_C_t_ci_high": {
+      "value": 0.19871,
+      "claim_id": "n3_gated_minus_neutralshort__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:562",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__FG": {
+      "value": -0.088889,
+      "claim_id": "n3_neutralshort_minus_ungated__FG",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:563",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__FG_ci_low": {
+      "value": -0.166667,
+      "claim_id": "n3_neutralshort_minus_ungated__FG_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:564",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__FG_ci_high": {
+      "value": -0.033333,
+      "claim_id": "n3_neutralshort_minus_ungated__FG_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:565",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__FG_t_ci_low": {
+      "value": -0.261262,
+      "claim_id": "n3_neutralshort_minus_ungated__FG_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:566",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__FG_t_ci_high": {
+      "value": 0.083485,
+      "claim_id": "n3_neutralshort_minus_ungated__FG_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:567",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_B": {
+      "value": -0.016667,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_B",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:568",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_B_ci_low": {
+      "value": -0.05,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_B_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:569",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_B_ci_high": {
+      "value": 0.016667,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_B_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:570",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_B_t_ci_low": {
+      "value": -0.099472,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_B_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:571",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_B_t_ci_high": {
+      "value": 0.066139,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_B_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:572",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_C": {
+      "value": -0.038889,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_C",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:573",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_C_ci_low": {
+      "value": -0.083333,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_C_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:574",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_C_ci_high": {
+      "value": 0.0,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_C_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:575",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_C_t_ci_low": {
+      "value": -0.143084,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_C_t_ci_low",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:576",
+      "must_print": false
+    },
+    "n3_contrast::neutralshort_minus_ungated__BWT_C_t_ci_high": {
+      "value": 0.065306,
+      "claim_id": "n3_neutralshort_minus_ungated__BWT_C_t_ci_high",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:577",
       "must_print": false
     },
     "global::n_ambiguous": {
-      "value": 1,
+      "value": 2,
       "claim_id": "ambiguous_parse_count",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:233",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:578",
       "must_print": false
     },
     "global::n_items_scored": {
-      "value": 3240,
+      "value": 6480,
       "claim_id": "items_scored_total",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:234",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:579",
       "must_print": false
     },
     "mcnemar::ungated_A": {
-      "value": 0.518958,
+      "value": 0.492645,
       "claim_id": "mcnemar_ungated_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:235",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:580",
       "must_print": false
     },
     "mcnemar::ungated_B": {
-      "value": 0.229481,
+      "value": 0.142071,
       "claim_id": "mcnemar_ungated_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:236",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:581",
       "must_print": false
     },
     "mcnemar::ungated_C": {
-      "value": 0.187742,
+      "value": 0.218518,
       "claim_id": "mcnemar_ungated_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:237",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:582",
       "must_print": false
     },
     "mcnemar::gated_A": {
-      "value": 0.728332,
+      "value": 0.505236,
       "claim_id": "mcnemar_gated_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:238",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:583",
       "must_print": false
     },
     "mcnemar::gated_B": {
-      "value": 0.404873,
+      "value": 0.075905,
       "claim_id": "mcnemar_gated_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:239",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:584",
       "must_print": false
     },
     "mcnemar::gated_C": {
-      "value": 0.677639,
+      "value": 0.415985,
       "claim_id": "mcnemar_gated_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:240",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:585",
       "must_print": false
     },
     "mcnemar::neutral_A": {
-      "value": 0.24296,
+      "value": 0.146177,
       "claim_id": "mcnemar_neutral_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:241",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:586",
       "must_print": false
     },
     "mcnemar::neutral_B": {
-      "value": 0.007,
+      "value": 0.001264,
       "claim_id": "mcnemar_neutral_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:242",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:587",
       "must_print": false
     },
     "mcnemar::neutral_C": {
-      "value": 0.143307,
+      "value": 0.051911,
       "claim_id": "mcnemar_neutral_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:243",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:588",
       "must_print": false
     },
     "mcnemar::neutralshort_A": {
-      "value": 0.252854,
+      "value": 0.148576,
       "claim_id": "mcnemar_neutralshort_A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:244",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:589",
       "must_print": false
     },
     "mcnemar::neutralshort_B": {
-      "value": 0.061428,
+      "value": 0.010455,
       "claim_id": "mcnemar_neutralshort_B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:245",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:590",
       "must_print": false
     },
     "mcnemar::neutralshort_C": {
-      "value": 0.025896,
+      "value": 0.010346,
       "claim_id": "mcnemar_neutralshort_C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:246",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:591",
       "must_print": false
     },
     "noise_null::A": {
-      "value": -0.044444,
+      "value": -0.013889,
       "claim_id": "noise_null__A",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:247",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:592",
       "must_print": true
+    },
+    "n3_noise::A_max_abs": {
+      "value": 0.066667,
+      "claim_id": "n3_noise_null__A_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:593",
+      "must_print": false
     },
     "noise_null::A_max_abs": {
       "value": 0.066667,
       "claim_id": "noise_null__A_max_abs",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:248",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:594",
       "must_print": false
     },
     "noise_null::B": {
-      "value": -0.016667,
+      "value": -0.013889,
       "claim_id": "noise_null__B",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:249",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:595",
       "must_print": true
+    },
+    "n3_noise::B_max_abs": {
+      "value": 0.066667,
+      "claim_id": "n3_noise_null__B_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:596",
+      "must_print": false
     },
     "noise_null::B_max_abs": {
       "value": 0.066667,
       "claim_id": "noise_null__B_max_abs",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:250",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:597",
       "must_print": false
     },
     "noise_null::C": {
-      "value": 0.011111,
+      "value": 0.022222,
       "claim_id": "noise_null__C",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:251",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:598",
       "must_print": true
     },
-    "noise_null::C_max_abs": {
+    "n3_noise::C_max_abs": {
       "value": 0.066667,
+      "claim_id": "n3_noise_null__C_max_abs",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:599",
+      "must_print": false
+    },
+    "noise_null::C_max_abs": {
+      "value": 0.116667,
       "claim_id": "noise_null__C_max_abs",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:252",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:600",
+      "must_print": false
+    },
+    "noise_sem::sd": {
+      "value": 0.051414,
+      "claim_id": "noise_sem__sd",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:601",
+      "must_print": false
+    },
+    "noise_sem::margin": {
+      "value": 0.044288,
+      "claim_id": "noise_sem__margin",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:602",
       "must_print": false
     },
     "protocol::gated_unparseable": {
       "value": 0,
       "claim_id": "protocol_gated__unparseable_reflections",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:253",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:603",
       "must_print": false
     },
     "protocol::gated_below_budget": {
       "value": 0,
       "claim_id": "protocol_gated__rounds_below_budget",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:254",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:604",
       "must_print": false
     },
     "protocol::neutral_unparseable": {
       "value": 0,
       "claim_id": "protocol_neutral__unparseable_reflections",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:255",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:605",
       "must_print": false
     },
     "protocol::neutral_below_budget": {
       "value": 0,
       "claim_id": "protocol_neutral__rounds_below_budget",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:256",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:606",
       "must_print": false
     },
     "protocol::neutralshort_unparseable": {
       "value": 0,
       "claim_id": "protocol_neutralshort__unparseable_reflections",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:257",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:607",
       "must_print": false
     },
     "protocol::neutralshort_below_budget": {
       "value": 0,
       "claim_id": "protocol_neutralshort__rounds_below_budget",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:258",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:608",
       "must_print": false
     },
     "protocol::ungated_unparseable": {
       "value": 0,
       "claim_id": "protocol_ungated__unparseable_reflections",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:259",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:609",
       "must_print": false
     },
     "protocol::ungated_below_budget": {
       "value": 0,
       "claim_id": "protocol_ungated__rounds_below_budget",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:260",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:610",
       "must_print": false
     },
     "global::n_model_calls": {
-      "value": 3638,
+      "value": 7277,
       "claim_id": "model_calls_total",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:261",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:611",
       "must_print": false
     },
     "global::n_failed_calls": {
       "value": 0,
       "claim_id": "model_calls_failed",
-      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:262",
+      "source": "cl4fm_selfevolve_forgetting_ledger.jsonl:612",
       "must_print": false
     }
   }
